@@ -91,13 +91,25 @@ header{
   font-size:12px;
 }
 
-.last-update{
+.update-status{
   color:var(--muted);
-  font-size:12px;
+  font-size:11px;
   background:white;
   border:1px solid var(--line);
-  padding:10px 13px;
-  border-radius:999px;
+  padding:9px 12px;
+  border-radius:14px;
+  line-height:1.4;
+  text-align:right;
+  white-space:nowrap;
+}
+
+.update-status div + div{
+  margin-top:2px;
+}
+
+.update-status b{
+  color:var(--text);
+  font-weight:700;
 }
 
 .hero{
@@ -619,6 +631,12 @@ footer{
 }
 
 @media(max-width:600px){
+  .update-status{
+    width:100%;
+    text-align:left;
+    white-space:normal;
+  }
+
   .container{
     width:calc(100% - 20px);
   }
@@ -685,8 +703,9 @@ footer{
     </div>
   </div>
 
-  <div class="last-update">
-    Updated: October 2026
+  <div class="update-status">
+    <div><b>Last checked:</b> 03 Oct 2026, 11:58</div>
+    <div><b>Last data change:</b> 03 Oct 2026, 11:58</div>
   </div>
 
 </div>
