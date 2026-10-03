@@ -759,6 +759,201 @@ ol{
   }
 }
 
+/* KAZAKHSTAN */
+
+.kz-top-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.2fr) minmax(320px,.8fr);
+  gap:17px;
+  margin-bottom:17px;
+}
+
+.kz-card{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:20px;
+  min-width:0;
+}
+
+.kz-priorities{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:9px;
+  margin-top:12px;
+}
+
+.kz-priority{
+  display:grid;
+  grid-template-columns:28px 1fr;
+  gap:8px;
+  align-items:center;
+}
+
+.kz-target-row{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:9px;
+  margin:14px 0;
+}
+
+.kz-target-box{
+  background:#fbfcff;
+  border:1px solid var(--line);
+  border-radius:13px;
+  padding:13px;
+}
+
+.kz-target-box span{
+  display:block;
+  color:var(--muted);
+  font-size:10px;
+}
+
+.kz-target-box b{
+  display:block;
+  margin-top:4px;
+  font-size:20px;
+}
+
+.kz-filters{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(140px,1fr));
+  gap:9px;
+  margin-bottom:17px;
+}
+
+.kz-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:17px;
+}
+
+.kz-uni-card{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:19px;
+  padding:20px;
+  min-width:0;
+}
+
+.kz-uni-card h4{
+  margin:0 0 4px;
+  font-size:19px;
+}
+
+.kz-quick{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:8px;
+  margin:14px 0;
+}
+
+.kz-quick div{
+  background:#f6f8fc;
+  border-radius:11px;
+  padding:10px;
+}
+
+.kz-quick span{
+  display:block;
+  color:var(--muted);
+  font-size:9px;
+}
+
+.kz-quick b{
+  display:block;
+  margin-top:3px;
+  font-size:11px;
+  line-height:1.35;
+}
+
+.kz-detail-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0 18px;
+  margin-top:12px;
+}
+
+.kz-detail{
+  padding:9px 0;
+  border-top:1px solid var(--line);
+  font-size:11px;
+  line-height:1.45;
+}
+
+.kz-detail span{
+  display:block;
+  color:var(--muted);
+  font-size:9px;
+  margin-bottom:2px;
+}
+
+.kz-source{
+  color:var(--primary);
+  font-weight:700;
+}
+
+.kz-note{
+  background:var(--amberSoft);
+  color:#7d5a18;
+  border-radius:11px;
+  padding:10px 12px;
+  font-size:11px;
+  line-height:1.45;
+  margin-top:10px;
+}
+
+.kz-timeline{
+  display:grid;
+  gap:8px;
+}
+
+.kz-timeline-row{
+  display:grid;
+  grid-template-columns:190px minmax(0,1fr) auto;
+  gap:12px;
+  align-items:center;
+  border:1px solid var(--line);
+  border-radius:13px;
+  padding:12px 13px;
+  background:white;
+}
+
+.kz-timeline-row b{
+  font-size:12px;
+}
+
+.kz-timeline-row span{
+  color:var(--muted);
+  font-size:11px;
+}
+
+.kz-countdown{
+  font-size:10px;
+  font-weight:800;
+  color:var(--primary);
+  white-space:nowrap;
+}
+
+.kz-checklist{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:7px;
+  margin-top:12px;
+}
+
+@media(max-width:1100px){
+  .kz-top-grid,
+  .kz-grid{
+    grid-template-columns:1fr;
+  }
+
+  .kz-filters{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
 /* VAULT */
 
 .vault-layout{
@@ -1030,6 +1225,22 @@ footer{
     grid-template-columns:auto minmax(0,1fr) auto;
   }
 
+  .kz-priorities,
+  .kz-target-row,
+  .kz-filters,
+  .kz-checklist,
+  .kz-detail-grid{
+    grid-template-columns:1fr;
+  }
+
+  .kz-quick{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .kz-timeline-row{
+    grid-template-columns:1fr;
+  }
+
   .upload-grid{
     grid-template-columns:1fr;
   }
@@ -1056,8 +1267,8 @@ footer{
   </div>
 
   <div class="update-status">
-    <div><b>Last checked:</b> 03 Oct 2026, 11:58</div>
-    <div><b>Last data change:</b> 03 Oct 2026, 11:58</div>
+    <div><b>Last checked:</b> 03 Oct 2026, 12:10</div>
+    <div><b>Last data change:</b> 03 Oct 2026, 12:10</div>
   </div>
 
 </div>
@@ -1117,6 +1328,10 @@ footer{
 
   <button class="tab" data-tab="china">
     🇨🇳 Китай
+  </button>
+
+  <button class="tab" data-tab="kazakhstan">
+    🇰🇿 Kazakhstan
   </button>
 
   <button class="tab" data-tab="countries">
@@ -1412,6 +1627,105 @@ footer{
 
 
   <div id="uniGrid" class="uni-grid"></div>
+
+</section>
+
+
+
+<!-- KAZAKHSTAN -->
+
+<section id="kazakhstan" class="section">
+
+  <div class="section-title">
+    <h3>🇰🇿 Kazakhstan — Medicine 2027</h3>
+    <p>Государственный грант • Medicine / General Medicine • путь к практической работе врачом</p>
+  </div>
+
+  <div class="notice">
+    <b>Важно:</b> minimum score — это только порог допуска к конкурсу, а не проходной балл на грант.
+    Данные 2027 ещё не опубликованы полностью, поэтому ниже показаны последние официальные данные 2026/2025.
+  </div>
+
+  <div class="kz-top-grid">
+    <div class="kz-card">
+      <div class="today-kicker">My 4 grant priorities</div>
+      <h4>Редактируемый список</h4>
+      <div id="kzPriorityList" class="kz-priorities"></div>
+    </div>
+
+    <div class="kz-card">
+      <div class="today-kicker">UNT target</div>
+      <h4>Medicine grant strategy</h4>
+
+      <div class="kz-target-row">
+        <div class="kz-target-box"><span>Minimum for healthcare</span><b>70</b></div>
+        <div class="kz-target-box"><span>Example last cutoff</span><b>124</b></div>
+        <div class="kz-target-box"><span>Planning safe target</span><b>130+</b></div>
+        <div class="kz-target-box"><span>My target</span><b>135</b></div>
+      </div>
+
+      <div class="muted">Minimum ≠ grant cutoff. “Safe target” is a planning buffer, not a guaranteed grant.</div>
+
+      <div class="goal-line">
+        <span>Current UNT progress</span>
+        <b id="kzUntProgressLabel">0 / 140</b>
+      </div>
+      <div class="today-progress"><div id="kzUntProgressBar"></div></div>
+      <input id="kzUntProgress" class="field" type="number" min="0" max="140" placeholder="Current UNT score">
+    </div>
+  </div>
+
+  <div class="kz-filters">
+    <select id="kzCityFilter" class="field"><option value="all">All cities</option></select>
+    <select id="kzCompetitionFilter" class="field">
+      <option value="all">All competitiveness</option>
+      <option value="high">High</option>
+      <option value="medium">Medium</option>
+      <option value="pending">2027 data pending</option>
+    </select>
+    <select id="kzDormFilter" class="field">
+      <option value="all">Dorm: all</option>
+      <option value="yes">Dorm available</option>
+    </select>
+    <select id="kzLanguageFilter" class="field">
+      <option value="all">All languages</option>
+      <option value="Kazakh">Kazakh</option>
+      <option value="Russian">Russian</option>
+      <option value="English">English</option>
+    </select>
+    <select id="kzStatusFilter" class="field">
+      <option value="all">All statuses</option>
+      <option>Not open</option>
+      <option>Open</option>
+      <option>Submitted</option>
+      <option>Waiting</option>
+      <option>Accepted</option>
+      <option>Rejected</option>
+    </select>
+  </div>
+
+  <div id="kzUniversityGrid" class="kz-grid"></div>
+
+  <div class="kz-card today-section-block" style="margin-top:17px">
+    <div class="today-card-head">
+      <div>
+        <div class="today-kicker">2027 grant timeline</div>
+        <h4>Official dates tracker</h4>
+      </div>
+      <div class="muted">Countdown appears only when an exact 2027 date is published</div>
+    </div>
+    <div id="kzTimeline" class="kz-timeline"></div>
+  </div>
+
+  <div class="kz-card">
+    <div class="today-card-head">
+      <div>
+        <div class="today-kicker">Kazakhstan document checklist</div>
+        <h4>Documents + Application Vault status</h4>
+      </div>
+    </div>
+    <div id="kzChecklist" class="kz-checklist"></div>
+  </div>
 
 </section>
 
@@ -3012,6 +3326,10 @@ if(typeof refreshTodayTracker==="function"){
   refreshTodayTracker();
 }
 
+if(typeof refreshKzTracker==="function"){
+  refreshKzTracker();
+}
+
 }
 
 };
@@ -3151,6 +3469,10 @@ renderDocuments();
 
 if(typeof refreshTodayTracker==="function"){
   refreshTodayTracker();
+}
+
+if(typeof refreshKzTracker==="function"){
+  refreshKzTracker();
 }
 
 }
@@ -3715,6 +4037,412 @@ document
     addDailyTask();
   }
 });
+
+
+/* KAZAKHSTAN TRACKER */
+
+const kzUniversities=[
+  {
+    name:"Asfendiyarov Kazakh National Medical University",
+    city:"Almaty",
+    program:"Medicine / General Medicine",
+    duration:"6 years",
+    language:["Kazakh","Russian","English"],
+    degree:"Doctor qualification / integrated medical education; pathway to residency",
+    minimum:70,
+    cutoff:"124 (2025 general competition)",
+    cutoffValue:124,
+    safe:"130+ planning target",
+    myTarget:135,
+    bioChem:"Biology + Chemistry are profile UNT subjects",
+    psychometric:"Required — pass / fail",
+    grants:"2027 data pending; official 2026/27 state-order documents are published by the university",
+    scholarship:"84,000 KZT/month (latest official medical-student state scholarship level, from Sep 2025)",
+    dorm:"Yes",
+    dormCost:"2026/27: most dorms 180,000–225,000 KZT per academic year; Dorm 9 from 40,000–60,000 KZT/month",
+    tuition:"2027 data pending — check official 2026/27 price list before backup decision",
+    application:"2027 date not announced; last national cycle: university admissions 20 Jun–25 Aug 2026",
+    grantPeriod:"2027 data pending; last cycle: 13–20 Jul 2026",
+    deadline:"Official 2027 deadline not announced",
+    apply:"University admissions / eGov grant route",
+    documents:"ID, diploma, UNT certificate, photos, medical documents, psychometric result, grant documents and university-specific items",
+    medical:"Medical certificate; fluorography may be required by admission rules",
+    after:"Integrated medical training → qualification allowing physician practice under Kazakhstan rules / further residency",
+    residency:"Residency available after base medical training; surgical specialties include general/specialized surgical tracks",
+    source:"https://kaznmu.edu.kz/ru/%D0%B1%D0%B0%D0%BA%D0%B0%D0%BB%D0%B0%D0%B2%D1%80%D0%B8%D0%B0%D1%82/",
+    competitiveness:"high"
+  },
+  {
+    name:"Astana Medical University",
+    city:"Astana",
+    program:"6B10123 Medicine",
+    duration:"6 years",
+    language:["Kazakh","Russian","English"],
+    degree:"Higher medical education / Medicine",
+    minimum:70,
+    cutoff:"2027 data pending — latest official university cutoff not published on the current admissions page",
+    cutoffValue:null,
+    safe:"Set after official cutoff publication",
+    myTarget:135,
+    bioChem:"Biology + Chemistry profile subjects",
+    psychometric:"Required for Healthcare admissions",
+    grants:"2027 data pending; 2026/27 state educational order is published by AMU",
+    scholarship:"84,000 KZT/month (latest official medical-student state scholarship level, from Sep 2025)",
+    dorm:"Yes",
+    dormCost:"2027 data pending — see current dormitory notice",
+    tuition:"2026/27 Medicine, 1st year: 2,280,000 KZT for citizens of Kazakhstan",
+    application:"2027 data pending; last published cycle used July–August admissions",
+    grantPeriod:"2027 data pending; last cycle: 13–20 Jul 2025/2026 framework",
+    deadline:"Official 2027 deadline not announced",
+    apply:"AMU admissions office / Platonus + national grant application route",
+    documents:"Upload PDF documents to Platonus before submitting to the admissions office; standard grant/admission documents apply",
+    medical:"Medical certificate requirements apply under admission rules",
+    after:"Medicine programme → clinical training / further postgraduate pathway",
+    residency:"AMU runs extensive residency programmes, including surgical specialties",
+    source:"https://amu.edu.kz/ru/postupayushchim/abiturientam/",
+    competitiveness:"pending"
+  },
+  {
+    name:"Karaganda Medical University",
+    city:"Karaganda",
+    program:"6B10113 Medicine",
+    duration:"6 years / 360 credits",
+    language:["Kazakh","Russian","English"],
+    degree:"Master of Medicine",
+    minimum:80,
+    cutoff:"112 (2025 general competition)",
+    cutoffValue:112,
+    safe:"120+ planning target",
+    myTarget:135,
+    bioChem:"Biology + Chemistry",
+    psychometric:"Required — pass / fail",
+    grants:"2027 data pending",
+    scholarship:"84,000 KZT/month (latest official medical-student state scholarship level, from Sep 2025)",
+    dorm:"Yes",
+    dormCost:"2026/27: 30,000–45,000 KZT/month depending on dormitory",
+    tuition:"Official Medicine programme page: 1,550,000 KZT/year",
+    application:"2027 data pending; national admissions framework applies",
+    grantPeriod:"2027 data pending; last cycle: 13–20 Jul 2026",
+    deadline:"Official 2027 deadline not announced",
+    apply:"QMU admissions + grant route via admissions commissions / eGov",
+    documents:"ID, diploma, 2 photos, form 075-u + fluorography, UNT certificate, electronic copies, programme codes, quota proof if applicable",
+    medical:"Form 075-u with fluorography image listed in official admissions documents",
+    after:"6-year Medicine programme → physician pathway and postgraduate residency",
+    residency:"QMU offers residency, including General Surgery",
+    source:"https://qmu.edu.kz/ru/obrazovatelnye-programmy/nimo/meditsina_nimo/",
+    competitiveness:"medium"
+  },
+  {
+    name:"Semey Medical University",
+    city:"Semey",
+    program:"General Medicine / Medicine",
+    duration:"6 years",
+    language:["Kazakh","Russian"],
+    degree:"Medical degree / physician pathway",
+    minimum:70,
+    cutoff:"2027 data pending — latest official grant cutoff not found on the current admissions page",
+    cutoffValue:null,
+    safe:"Set after official cutoff publication",
+    myTarget:135,
+    bioChem:"Biology + Chemistry profile subjects for Medicine",
+    psychometric:"Required; last published cycle: grant applicants 20 Jun–12 Jul, paid applicants 20 Jun–20 Aug",
+    grants:"2027 data pending; university admissions page states about 2,700 grants annually across programmes",
+    scholarship:"84,000 KZT/month (latest official medical-student state scholarship level, from Sep 2025)",
+    dorm:"Yes",
+    dormCost:"2027 data pending — verify current official dormitory tariff",
+    tuition:"Latest university forum response: General Medicine 900,000 KZT; verify current price list before payment",
+    application:"2027 data pending; last cycle university admission 20 Jun–25 Aug",
+    grantPeriod:"2027 data pending; last cycle: 13–20 Jul",
+    deadline:"Official 2027 deadline not announced",
+    apply:"SMU admissions / national grant application route",
+    documents:"Standard university + grant application set; verify the 2027 list when published",
+    medical:"Medical documentation required under university admission rules",
+    after:"General Medicine → physician pathway / residency",
+    residency:"Residency available; surgical specialization can be pursued after base training",
+    source:"https://smu.edu.kz/bilim-denggeyi/bakalavriat/",
+    competitiveness:"pending"
+  },
+  {
+    name:"South Kazakhstan Medical Academy",
+    city:"Shymkent",
+    program:"6B10115 Medicine",
+    duration:"6 years",
+    language:["Kazakh","Russian","English"],
+    degree:"Medicine",
+    minimum:70,
+    cutoff:"2027 data pending — official 2026 grant participation threshold is 70, not a grant cutoff",
+    cutoffValue:null,
+    safe:"Set after official cutoff publication",
+    myTarget:135,
+    bioChem:"Biology + Chemistry profile subjects",
+    psychometric:"Required for Healthcare admissions",
+    grants:"2027 data pending",
+    scholarship:"84,000 KZT/month (latest official medical-student state scholarship level, from Sep 2025)",
+    dorm:"Yes",
+    dormCost:"2027 data pending — verify current official dormitory tariff",
+    tuition:"2027 data pending — verify official price list",
+    application:"2027 data pending; last published paid admission: 20 Jun–20 Aug 2026",
+    grantPeriod:"2027 data pending; last cycle: 13–20 Jul 2026",
+    deadline:"Official 2027 deadline not announced",
+    apply:"SKMA admissions office / national grant route",
+    documents:"Standard admission + grant documents; 2027 university-specific list pending",
+    medical:"Medical certificate requirements apply",
+    after:"6-year Medicine programme → physician / residency pathway",
+    residency:"Surgical residency possible after the required medical training",
+    source:"https://new.skma.edu.kz/ru/pages/dlya-postupayuschih-bakalavriat",
+    competitiveness:"pending"
+  }
+];
+
+const kzTimelineItems=[
+  {title:"Main UNT",date:null,last:"Last cycle: 10 May – 10 Jul 2026"},
+  {title:"Psychometric / special exam",date:null,last:"Last cycle framework: 20 Jun – 20 Aug; grant applicants may have earlier university windows"},
+  {title:"State grant applications",date:null,last:"Last cycle: 13–20 Jul 2026"},
+  {title:"University admissions",date:null,last:"Last national cycle: 20 Jun – 25 Aug 2026"},
+  {title:"University document deadlines",date:null,last:"Official 2027 date not announced — check each university"}
+];
+
+const kzChecklistItems=[
+  "ID / passport",
+  "UNT certificate",
+  "School diploma",
+  "Transcript",
+  "Photo",
+  "Medical certificate",
+  "Fluorography if required",
+  "Psychometric exam result",
+  "Grant application",
+  "eGov documents",
+  "Dormitory application",
+  "Other university-specific documents"
+];
+
+function getKzStatuses(){
+  return readLocal("kzMedicineStatuses",{});
+}
+
+function renderKzPriorities(){
+  const saved=readLocal("kzGrantPriorities",[
+    "Asfendiyarov Kazakh National Medical University",
+    "Karaganda Medical University",
+    "Astana Medical University",
+    "Semey Medical University"
+  ]);
+
+  const box=document.getElementById("kzPriorityList");
+  if(!box) return;
+
+  box.innerHTML=[0,1,2,3].map(index=>`
+    <div class="kz-priority">
+      <div class="priority-number">${index+1}</div>
+      <input class="priority-input" data-kz-priority="${index}" value="${saved[index]||""}" placeholder="University">
+    </div>
+  `).join("");
+
+  box.querySelectorAll("[data-kz-priority]").forEach(input=>{
+    input.addEventListener("input",()=>{
+      const next=readLocal("kzGrantPriorities",["","","",""]);
+      next[Number(input.dataset.kzPriority)]=input.value;
+      writeLocal("kzGrantPriorities",next);
+    });
+  });
+}
+
+function renderKzUntProgress(){
+  const input=document.getElementById("kzUntProgress");
+  if(!input) return;
+
+  const value=Math.max(0,Math.min(140,Number(localStorage.getItem("kzUntProgress")||0)));
+  input.value=value||"";
+  document.getElementById("kzUntProgressLabel").textContent=value+" / 140";
+  document.getElementById("kzUntProgressBar").style.width=(value/140*100)+"%";
+
+  input.oninput=()=>{
+    const next=Math.max(0,Math.min(140,Number(input.value)||0));
+    localStorage.setItem("kzUntProgress",String(next));
+    document.getElementById("kzUntProgressLabel").textContent=next+" / 140";
+    document.getElementById("kzUntProgressBar").style.width=(next/140*100)+"%";
+  };
+}
+
+function populateKzFilters(){
+  const city=document.getElementById("kzCityFilter");
+  if(!city || city.dataset.ready) return;
+
+  [...new Set(kzUniversities.map(u=>u.city))].sort().forEach(value=>{
+    city.insertAdjacentHTML("beforeend",`<option value="${value}">${value}</option>`);
+  });
+
+  city.dataset.ready="1";
+
+  ["kzCityFilter","kzCompetitionFilter","kzDormFilter","kzLanguageFilter","kzStatusFilter"].forEach(id=>{
+    document.getElementById(id).addEventListener("change",renderKzUniversities);
+  });
+}
+
+function kzStatusOptions(selected){
+  return ["Not open","Open","Submitted","Waiting","Accepted","Rejected"]
+    .map(option=>`<option ${option===selected?"selected":""}>${option}</option>`).join("");
+}
+
+function renderKzUniversities(){
+  const grid=document.getElementById("kzUniversityGrid");
+  if(!grid) return;
+
+  const city=document.getElementById("kzCityFilter").value;
+  const competition=document.getElementById("kzCompetitionFilter").value;
+  const dorm=document.getElementById("kzDormFilter").value;
+  const language=document.getElementById("kzLanguageFilter").value;
+  const statusFilter=document.getElementById("kzStatusFilter").value;
+  const statuses=getKzStatuses();
+
+  const filtered=kzUniversities.filter(u=>{
+    const status=statuses[u.name]||"Not open";
+    return (city==="all"||u.city===city)
+      && (competition==="all"||u.competitiveness===competition)
+      && (dorm==="all"||u.dorm==="Yes")
+      && (language==="all"||u.language.includes(language))
+      && (statusFilter==="all"||status===statusFilter);
+  });
+
+  grid.innerHTML=filtered.map((u)=>{
+    const status=statuses[u.name]||"Not open";
+    return `
+      <article class="kz-uni-card">
+        <div class="uni-top">
+          <div>
+            <h4>${u.name}</h4>
+            <div class="uni-meta">${u.city} • ${u.program} • ${u.duration}</div>
+          </div>
+          <select class="status-select" onchange="setKzStatus('${u.name.replace(/'/g,"\\'")}',this.value)">
+            ${kzStatusOptions(status)}
+          </select>
+        </div>
+
+        <div class="kz-quick">
+          <div><span>Last cutoff</span><b>${u.cutoff}</b></div>
+          <div><span>Safe target</span><b>${u.safe}</b></div>
+          <div><span>Scholarship</span><b>84,000 KZT/mo</b></div>
+          <div><span>Dorm</span><b>${u.dorm}</b></div>
+          <div><span>Minimum UNT</span><b>${u.minimum}</b></div>
+          <div><span>My target</span><b>${u.myTarget}</b></div>
+          <div><span>Language</span><b>${u.language.join(", ")}</b></div>
+          <div><span>Deadline</span><b>${u.deadline}</b></div>
+        </div>
+
+        <details>
+          <summary>Подробнее</summary>
+          <div class="kz-detail-grid">
+            <div class="kz-detail"><span>Degree / qualification</span>${u.degree}</div>
+            <div class="kz-detail"><span>Biology / Chemistry</span>${u.bioChem}</div>
+            <div class="kz-detail"><span>Psychometric / special exam</span>${u.psychometric}</div>
+            <div class="kz-detail"><span>State grants</span>${u.grants}</div>
+            <div class="kz-detail"><span>Dormitory cost</span>${u.dormCost}</div>
+            <div class="kz-detail"><span>Tuition backup</span>${u.tuition}</div>
+            <div class="kz-detail"><span>Application period</span>${u.application}</div>
+            <div class="kz-detail"><span>Grant application period</span>${u.grantPeriod}</div>
+            <div class="kz-detail"><span>Where to apply</span>${u.apply}</div>
+            <div class="kz-detail"><span>Required documents</span>${u.documents}</div>
+            <div class="kz-detail"><span>Medical certificate</span>${u.medical}</div>
+            <div class="kz-detail"><span>After graduation</span>${u.after}</div>
+            <div class="kz-detail"><span>Internship / residency</span>${u.residency}</div>
+            <div class="kz-detail"><span>Surgical residency later</span>Yes, after completing the required medical training and winning admission to the relevant residency.</div>
+          </div>
+          <div class="kz-note">2027 data pending where explicitly marked. No score shown here guarantees a state grant.</div>
+          <div class="actions">
+            <a class="btn soft kz-source" href="${u.source}" target="_blank" rel="noopener">Official source</a>
+          </div>
+        </details>
+      </article>
+    `;
+  }).join("") || '<div class="muted">No universities match these filters.</div>';
+}
+
+window.setKzStatus=function(name,status){
+  const state=getKzStatuses();
+  state[name]=status;
+  writeLocal("kzMedicineStatuses",state);
+  renderKzUniversities();
+};
+
+function renderKzTimeline(){
+  const box=document.getElementById("kzTimeline");
+  if(!box) return;
+
+  box.innerHTML=kzTimelineItems.map(item=>`
+    <div class="kz-timeline-row">
+      <b>${item.title}</b>
+      <span>${item.date ? item.date : "Official 2027 date not announced"}<br>${item.last}</span>
+      <div class="kz-countdown">${item.date ? "" : "2027 pending"}</div>
+    </div>
+  `).join("");
+}
+
+async function renderKzChecklist(){
+  const box=document.getElementById("kzChecklist");
+  if(!box) return;
+
+  const state=readLocal("kzDocumentChecklist",{});
+  let documents=[];
+  try{ documents=await getDocuments(); }catch(error){ documents=[]; }
+
+  const aliases={
+    "ID / passport":["id","passport","удостовер"],
+    "UNT certificate":["unt","ент"],
+    "School diploma":["diploma","аттестат"],
+    "Transcript":["transcript"],
+    "Photo":["photo","фото"],
+    "Medical certificate":["medical certificate","075","медицин"],
+    "Fluorography if required":["fluorography","флюор"],
+    "Psychometric exam result":["psychometric","психометр"],
+    "Grant application":["grant application","грант"],
+    "eGov documents":["egov"],
+    "Dormitory application":["dormitory","общежит"],
+    "Other university-specific documents":["university","specific"]
+  };
+
+  function vaultFor(item){
+    const terms=aliases[item]||[item];
+    const matches=documents.filter(doc=>{
+      const hay=String((doc.label||"")+" "+(doc.fileName||"")).toLowerCase();
+      return terms.some(term=>hay.includes(term.toLowerCase()));
+    });
+    if(matches.some(doc=>doc.status==="ready")) return '<span class="vault-ready">Vault: Ready</span>';
+    if(matches.length) return '<span class="vault-pending">Vault: '+(matches[0].status||"uploaded")+'</span>';
+    return '<span class="vault-pending">Not uploaded</span>';
+  }
+
+  box.innerHTML=kzChecklistItems.map((item,index)=>`
+    <label class="tracker-task ${state[index]?"done":""}">
+      <input type="checkbox" data-kz-doc="${index}" ${state[index]?"checked":""}>
+      <div>
+        <div class="task-name">${item}</div>
+        <div class="task-meta">${vaultFor(item)}</div>
+      </div>
+      <span></span>
+    </label>
+  `).join("");
+
+  box.querySelectorAll("[data-kz-doc]").forEach(input=>{
+    input.addEventListener("change",()=>{
+      const next=readLocal("kzDocumentChecklist",{});
+      next[input.dataset.kzDoc]=input.checked;
+      writeLocal("kzDocumentChecklist",next);
+      renderKzChecklist();
+    });
+  });
+}
+
+async function refreshKzTracker(){
+  populateKzFilters();
+  renderKzPriorities();
+  renderKzUntProgress();
+  renderKzUniversities();
+  renderKzTimeline();
+  await renderKzChecklist();
+}
+
+refreshKzTracker();
 
 refreshTodayTracker();
 
