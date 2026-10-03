@@ -1,0 +1,2411 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Medicine Admissions 2027</title>
+
+<style>
+:root{
+  --bg:#f5f7fb;
+  --card:#fff;
+  --text:#182033;
+  --muted:#707b8d;
+  --line:#e5e9f1;
+  --primary:#4968f5;
+  --primarySoft:#eef1ff;
+  --green:#16865a;
+  --greenSoft:#eaf8f1;
+  --amber:#ad741e;
+  --amberSoft:#fff5dc;
+  --blue:#3973de;
+  --blueSoft:#edf4ff;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+button,input,select,textarea{font:inherit}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.container{
+  max-width:1180px;
+  margin:auto;
+  padding:0 18px;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(245,247,251,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+
+.header-inner{
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:11px;
+}
+
+.logo{
+  width:40px;
+  height:40px;
+  border-radius:13px;
+  background:linear-gradient(135deg,#4968f5,#8292ff);
+  color:white;
+  display:grid;
+  place-items:center;
+  font-weight:800;
+}
+
+.brand h1{
+  margin:0;
+  font-size:18px;
+}
+
+.brand p{
+  margin:2px 0 0;
+  color:var(--muted);
+  font-size:11px;
+}
+
+.last-update{
+  color:var(--muted);
+  font-size:11px;
+  background:white;
+  border:1px solid var(--line);
+  padding:8px 10px;
+  border-radius:999px;
+}
+
+.hero{
+  margin-top:24px;
+  background:linear-gradient(135deg,#1c2744,#30426d 65%,#526df6);
+  color:white;
+  border-radius:25px;
+  padding:26px;
+  display:grid;
+  grid-template-columns:1.4fr .6fr;
+  gap:24px;
+}
+
+.hero h2{
+  margin:0 0 9px;
+  font-size:28px;
+}
+
+.hero p{
+  margin:0;
+  color:#d8def0;
+  line-height:1.55;
+}
+
+.hero-stats{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:9px;
+}
+
+.hero-stat{
+  padding:13px;
+  border-radius:15px;
+  background:rgba(255,255,255,.1);
+}
+
+.hero-stat b{
+  display:block;
+  font-size:21px;
+}
+
+.hero-stat span{
+  color:#dce2f2;
+  font-size:10px;
+}
+
+.tabs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:17px 0;
+}
+
+.tab{
+  background:white;
+  border:1px solid var(--line);
+  color:var(--muted);
+  border-radius:11px;
+  padding:10px 13px;
+  cursor:pointer;
+}
+
+.tab.active{
+  color:var(--primary);
+  background:var(--primarySoft);
+  border-color:#d5ddff;
+  font-weight:700;
+}
+
+.section{
+  display:none;
+  padding-bottom:45px;
+}
+
+.section.active{
+  display:block;
+}
+
+.section-title{
+  margin:8px 0 15px;
+}
+
+.section-title h3{
+  margin:0;
+  font-size:22px;
+}
+
+.section-title p{
+  margin:4px 0 0;
+  color:var(--muted);
+  font-size:12px;
+}
+
+.notice{
+  background:white;
+  border:1px solid var(--line);
+  border-left:4px solid var(--primary);
+  border-radius:13px;
+  padding:13px 15px;
+  color:#606b7d;
+  font-size:12px;
+  line-height:1.55;
+  margin-bottom:14px;
+}
+
+.grid3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:13px;
+}
+
+.card{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:17px;
+  padding:17px;
+}
+
+.card h4{
+  margin:0 0 8px;
+}
+
+.big{
+  font-size:28px;
+  font-weight:800;
+}
+
+.muted{
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.5;
+}
+
+.controls{
+  display:flex;
+  gap:9px;
+  flex-wrap:wrap;
+  margin-bottom:13px;
+}
+
+.controls input,
+.controls select,
+.field{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:11px;
+  padding:10px 11px;
+  color:var(--text);
+}
+
+.controls input{
+  flex:1;
+  min-width:220px;
+}
+
+.uni-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:13px;
+}
+
+.uni-card{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:19px;
+  padding:18px;
+}
+
+.uni-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:12px;
+}
+
+.uni-card h4{
+  font-size:18px;
+  margin:0 0 4px;
+}
+
+.uni-meta{
+  color:var(--muted);
+  font-size:11px;
+}
+
+.badge{
+  font-size:10px;
+  font-weight:800;
+  padding:5px 8px;
+  border-radius:999px;
+}
+
+.core{
+  background:var(--greenSoft);
+  color:var(--green);
+}
+
+.watch{
+  background:var(--amberSoft);
+  color:var(--amber);
+}
+
+.backup{
+  background:var(--blueSoft);
+  color:var(--blue);
+}
+
+.fit{
+  margin:12px 0;
+  color:#4e596c;
+  font-size:12px;
+  line-height:1.5;
+}
+
+.funding{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px;
+}
+
+.fund{
+  background:#f3f5f9;
+  border-radius:11px;
+  padding:9px;
+}
+
+.fund span{
+  display:block;
+  color:var(--muted);
+  font-size:9px;
+}
+
+.fund b{
+  font-size:11px;
+}
+
+.info-row{
+  padding:8px 0;
+  border-top:1px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  font-size:11px;
+}
+
+.info-row span{
+  color:var(--muted);
+}
+
+details{
+  margin-top:10px;
+}
+
+summary{
+  cursor:pointer;
+  font-size:11px;
+  font-weight:700;
+}
+
+ol{
+  font-size:11px;
+  color:#5f6979;
+  line-height:1.5;
+  padding-left:19px;
+}
+
+.actions{
+  display:flex;
+  gap:7px;
+  flex-wrap:wrap;
+  margin-top:12px;
+}
+
+.btn{
+  border:1px solid var(--line);
+  background:white;
+  border-radius:10px;
+  padding:9px 11px;
+  cursor:pointer;
+  font-size:11px;
+  font-weight:700;
+}
+
+.btn.primary{
+  background:var(--primary);
+  border-color:var(--primary);
+  color:white;
+}
+
+.btn.soft{
+  background:var(--primarySoft);
+  color:var(--primary);
+}
+
+.country-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:13px;
+}
+
+.country{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:17px;
+  padding:17px;
+}
+
+.country h4{
+  margin:0 0 6px;
+}
+
+/* VAULT */
+
+.vault-layout{
+  display:grid;
+  grid-template-columns:300px 1fr;
+  gap:14px;
+}
+
+.vault-sidebar,
+.vault-main{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:16px;
+}
+
+.category-btn{
+  width:100%;
+  text-align:left;
+  border:0;
+  background:transparent;
+  padding:10px;
+  border-radius:10px;
+  cursor:pointer;
+  color:#515c70;
+  margin-bottom:3px;
+}
+
+.category-btn.active{
+  background:var(--primarySoft);
+  color:var(--primary);
+  font-weight:700;
+}
+
+.upload-box{
+  border:1px dashed #ccd4e5;
+  background:#fafbfe;
+  border-radius:14px;
+  padding:14px;
+  margin-bottom:14px;
+}
+
+.upload-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+}
+
+.field{
+  width:100%;
+}
+
+.doc-list{
+  display:grid;
+  gap:8px;
+}
+
+.doc-card{
+  border:1px solid var(--line);
+  border-radius:13px;
+  padding:12px;
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items:center;
+}
+
+.doc-title{
+  font-weight:700;
+  font-size:12px;
+}
+
+.doc-meta{
+  color:var(--muted);
+  font-size:10px;
+  margin-top:3px;
+}
+
+.tag{
+  display:inline-block;
+  margin-top:5px;
+  background:#f0f2f6;
+  color:#667084;
+  padding:3px 6px;
+  border-radius:999px;
+  font-size:9px;
+}
+
+.vault-note{
+  font-size:11px;
+  color:var(--muted);
+  line-height:1.45;
+}
+
+.checklist{
+  margin-top:16px;
+}
+
+.check-item{
+  display:flex;
+  gap:9px;
+  align-items:flex-start;
+  border-bottom:1px solid var(--line);
+  padding:8px 0;
+  font-size:11px;
+}
+
+.progress{
+  height:9px;
+  background:#edf0f5;
+  border-radius:999px;
+  overflow:hidden;
+  margin:7px 0 10px;
+}
+
+.progress div{
+  height:100%;
+  width:0;
+  background:linear-gradient(90deg,#4968f5,#8493ff);
+}
+
+.timeline{
+  display:grid;
+  gap:9px;
+}
+
+.timeline-step{
+  display:grid;
+  grid-template-columns:150px 1fr;
+  gap:14px;
+  background:white;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:13px;
+}
+
+.time{
+  color:var(--primary);
+  font-weight:800;
+  font-size:11px;
+}
+
+.timeline-text{
+  color:#536074;
+  font-size:12px;
+  line-height:1.5;
+}
+
+footer{
+  text-align:center;
+  color:var(--muted);
+  font-size:10px;
+  padding:25px 0 40px;
+}
+
+@media(max-width:850px){
+  .hero,
+  .vault-layout{
+    grid-template-columns:1fr;
+  }
+
+  .grid3,
+  .uni-grid,
+  .country-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:600px){
+  .header-inner{
+    flex-direction:column;
+    align-items:flex-start;
+    padding:12px 0;
+  }
+
+  .hero{
+    margin-top:14px;
+  }
+
+  .hero h2{
+    font-size:23px;
+  }
+
+  .upload-grid{
+    grid-template-columns:1fr;
+  }
+
+  .timeline-step{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container header-inner">
+
+  <div class="brand">
+    <div class="logo">M</div>
+
+    <div>
+      <h1>Medicine Admissions 2027</h1>
+      <p>English medicine • full scholarship tracker</p>
+    </div>
+  </div>
+
+  <div class="last-update">
+    Updated: October 2026
+  </div>
+
+</div>
+</header>
+
+
+<div class="container">
+
+<section class="hero">
+
+  <div>
+    <h2>Мой путь в медицину за границу</h2>
+
+    <p>
+      Только English-taught MBBS / Clinical Medicine.
+      Цель — полный грант, прямой путь к работе врачом
+      и возможность позже специализироваться в хирургии.
+    </p>
+  </div>
+
+  <div class="hero-stats">
+
+    <div class="hero-stat">
+      <b>2027</b>
+      <span>Intake</span>
+    </div>
+
+    <div class="hero-stat">
+      <b>MBBS</b>
+      <span>Degree target</span>
+    </div>
+
+    <div class="hero-stat">
+      <b>100%</b>
+      <span>Funding target</span>
+    </div>
+
+    <div class="hero-stat">
+      <b>EN</b>
+      <span>English only</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<nav class="tabs">
+
+  <button class="tab active" data-tab="overview">
+    Обзор
+  </button>
+
+  <button class="tab" data-tab="china">
+    🇨🇳 Китай
+  </button>
+
+  <button class="tab" data-tab="countries">
+    Страны
+  </button>
+
+  <button class="tab" data-tab="vault">
+    📁 Application Vault
+  </button>
+
+  <button class="tab" data-tab="timeline">
+    План подачи
+  </button>
+
+</nav>
+
+
+<main>
+
+<!-- OVERVIEW -->
+
+<section id="overview" class="section active">
+
+  <div class="section-title">
+    <h3>Обзор</h3>
+    <p>Ключевые параметры моей стратегии</p>
+  </div>
+
+  <div class="notice">
+
+    <b>Фильтр:</b>
+
+    только English-taught MBBS / Clinical Medicine.
+
+    Приоритет —
+    tuition + accommodation + insurance + stipend.
+
+    SAT сейчас нет.
+    Если университет его требует или принимает,
+    это отмечается отдельно.
+
+  </div>
+
+  <div class="grid3">
+
+    <div class="card">
+      <h4>Сейчас изучаем</h4>
+      <div class="big">China</div>
+
+      <div class="muted">
+        Другие страны будут добавляться
+        после отдельной проверки.
+      </div>
+    </div>
+
+
+    <div class="card">
+      <h4>Университетов в базе</h4>
+      <div class="big">4</div>
+
+      <div class="muted">
+        Список будет расширяться
+        только подходящими вариантами.
+      </div>
+    </div>
+
+
+    <div class="card">
+      <h4>Главный full-funding lead</h4>
+      <div class="big">XJMU</div>
+
+      <div class="muted">
+        Текущий наиболее понятный
+        полный маршрут финансирования.
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- CHINA -->
+
+<section id="china" class="section">
+
+  <div class="section-title">
+    <h3>Китай</h3>
+
+    <p>
+      English MBBS / Clinical Medicine
+    </p>
+  </div>
+
+
+  <div class="controls">
+
+    <input
+      id="search"
+      placeholder="Поиск университета"
+    >
+
+    <select id="statusFilter">
+
+      <option value="all">
+        Все
+      </option>
+
+      <option value="core">
+        CORE
+      </option>
+
+      <option value="watch">
+        WATCH
+      </option>
+
+      <option value="backup">
+        BACKUP
+      </option>
+
+    </select>
+
+  </div>
+
+
+  <div id="uniGrid" class="uni-grid"></div>
+
+</section>
+
+
+
+<!-- COUNTRIES -->
+
+<section id="countries" class="section">
+
+  <div class="section-title">
+
+    <h3>Другие страны</h3>
+
+    <p>
+      Добавим после полноценного анализа
+    </p>
+
+  </div>
+
+
+  <div class="country-grid">
+
+    <div class="country">
+
+      <h4>🇰🇷 South Korea</h4>
+
+      <div class="muted">
+        Пока не проверено
+        по твоему medical + full ride фильтру.
+      </div>
+
+    </div>
+
+
+    <div class="country">
+
+      <h4>🇭🇰 Hong Kong</h4>
+
+      <div class="muted">
+        Проверим прямую медицину,
+        scholarships и licensing.
+      </div>
+
+    </div>
+
+
+    <div class="country">
+
+      <h4>🇸🇬 Singapore</h4>
+
+      <div class="muted">
+        Нужно отдельно проверить medicine,
+        гранты и обязательства после обучения.
+      </div>
+
+    </div>
+
+
+    <div class="country">
+
+      <h4>🇦🇪 UAE / 🇶🇦 Qatar</h4>
+
+      <div class="muted">
+        Проверим direct medicine
+        и полное финансирование.
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- APPLICATION VAULT -->
+
+<section id="vault" class="section">
+
+  <div class="section-title">
+
+    <h3>Application Vault</h3>
+
+    <p>
+      Все документы для поступления в одном месте
+    </p>
+
+  </div>
+
+
+  <div class="notice">
+
+    🔒 Файлы сохраняются
+    <b>локально в браузере на твоём устройстве</b>.
+
+    Они не загружаются в публичный GitHub repository.
+
+  </div>
+
+
+  <div class="vault-layout">
+
+    <!-- sidebar -->
+
+    <aside class="vault-sidebar">
+
+      <h4>Категории</h4>
+
+      <button class="category-btn active" data-category="all">
+        📚 Все документы
+      </button>
+
+      <button class="category-btn" data-category="identity">
+        🪪 Identity & School
+      </button>
+
+      <button class="category-btn" data-category="exams">
+        📝 Exams
+      </button>
+
+      <button class="category-btn" data-category="application">
+        📄 Application Core
+      </button>
+
+      <button class="category-btn" data-category="portfolio">
+        🩺 Portfolio
+      </button>
+
+      <button class="category-btn" data-category="certificates">
+        🏆 Certificates & Awards
+      </button>
+
+      <button class="category-btn" data-category="medical">
+        🏥 Medical & Legal
+      </button>
+
+      <button class="category-btn" data-category="finance">
+        💳 Financial
+      </button>
+
+      <button class="category-btn" data-category="university">
+        🎓 University-specific
+      </button>
+
+
+      <div class="checklist">
+
+        <h4>Master checklist</h4>
+
+        <div id="progressText" class="vault-note">
+          0 / 15 готово
+        </div>
+
+        <div class="progress">
+          <div id="progressBar"></div>
+        </div>
+
+        <div id="checklist"></div>
+
+      </div>
+
+    </aside>
+
+
+
+    <!-- main -->
+
+    <div class="vault-main">
+
+      <div class="upload-box">
+
+        <h4>
+          Добавить документ
+        </h4>
+
+        <div class="upload-grid">
+
+          <input
+            id="docLabel"
+            class="field"
+            placeholder="Название документа"
+          >
+
+
+          <select
+            id="docCategory"
+            class="field"
+          >
+
+            <option value="identity">
+              Identity & School
+            </option>
+
+            <option value="exams">
+              Exams
+            </option>
+
+            <option value="application">
+              Application Core
+            </option>
+
+            <option value="portfolio">
+              Portfolio
+            </option>
+
+            <option value="certificates">
+              Certificates & Awards
+            </option>
+
+            <option value="medical">
+              Medical & Legal
+            </option>
+
+            <option value="finance">
+              Financial
+            </option>
+
+            <option value="university">
+              University-specific
+            </option>
+
+          </select>
+
+
+          <input
+            id="docUniversity"
+            class="field"
+            placeholder="Для какого вуза? (optional)"
+          >
+
+
+          <select
+            id="docStatus"
+            class="field"
+          >
+
+            <option value="ready">
+              Ready
+            </option>
+
+            <option value="draft">
+              Draft
+            </option>
+
+            <option value="need">
+              Need to prepare
+            </option>
+
+          </select>
+
+
+          <input
+            id="docExpiry"
+            type="date"
+            class="field"
+            title="Срок действия, если есть"
+          >
+
+
+          <input
+            id="docFile"
+            type="file"
+            class="field"
+          >
+
+        </div>
+
+
+        <button
+          id="saveDoc"
+          class="btn primary"
+          style="margin-top:9px"
+        >
+          Сохранить документ
+        </button>
+
+
+        <div
+          id="docMsg"
+          class="vault-note"
+          style="margin-top:8px"
+        ></div>
+
+      </div>
+
+
+      <div>
+
+        <h4 id="vaultTitle">
+          Все документы
+        </h4>
+
+        <div
+          id="docList"
+          class="doc-list"
+        >
+          Пока документов нет.
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- TIMELINE -->
+
+<section id="timeline" class="section">
+
+  <div class="section-title">
+
+    <h3>План подачи</h3>
+
+    <p>
+      Весь путь до поступления
+    </p>
+
+  </div>
+
+
+  <div class="timeline">
+
+
+    <div class="timeline-step">
+
+      <div class="time">
+        Oct–Nov 2026
+      </div>
+
+      <div class="timeline-text">
+
+        IELTS,
+        school transcript,
+        expected graduation,
+        CV,
+        awards,
+        recommendations,
+        personal statement.
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-step">
+
+      <div class="time">
+        Autumn–Winter 2026
+      </div>
+
+      <div class="timeline-text">
+
+        CSCA preparation.
+        Предметы проверяем отдельно
+        для каждого университета.
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-step">
+
+      <div class="time">
+        Dec 2026 – Spring 2027
+      </div>
+
+      <div class="timeline-text">
+
+        Открытие заявок.
+        В первую очередь отправляем
+        туда, где подтверждён полный грант.
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-step">
+
+      <div class="time">
+        Applications
+      </div>
+
+      <div class="timeline-text">
+
+        University application
+        + scholarship / CSC application,
+        если требуется.
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-step">
+
+      <div class="time">
+        Before deadlines
+      </div>
+
+      <div class="timeline-text">
+
+        Police clearance,
+        medical examination,
+        нотариальные переводы,
+        financial documents.
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-step">
+
+      <div class="time">
+        Spring–Summer 2027
+      </div>
+
+      <div class="timeline-text">
+
+        Interviews,
+        admission decisions
+        и scholarship decisions.
+
+      </div>
+
+    </div>
+
+
+    <div class="timeline-step">
+
+      <div class="time">
+        Summer 2027
+      </div>
+
+      <div class="timeline-text">
+
+        Final diploma,
+        visa,
+        enrollment documents
+        и подготовка к переезду.
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+Medicine Admissions 2027
+•
+Personal admissions dashboard
+
+</footer>
+
+</div>
+
+
+
+<script>
+
+/* UNIVERSITY DATABASE */
+
+const universities=[
+
+{
+name:"Xinjiang Medical University",
+city:"Urumqi",
+program:"Clinical Medicine — English",
+duration:"6 years",
+status:"core",
+
+fit:
+"Текущий наиболее понятный вариант с полноценным funding route.",
+
+funding:{
+tuition:"100% covered",
+dorm:"Covered",
+insurance:"Covered",
+stipend:"30,000 RMB/year"
+},
+
+ielts:"IELTS ≥ 6.0 (2026)",
+
+csca:
+"Required — 2027 subjects must be rechecked",
+
+sat:
+"Not mandatory in 2026 guide",
+
+fee:
+"No fee stated in 2026 undergraduate guide",
+
+portal:
+"https://admission.xjmu.edu.cn/",
+
+source:
+"https://gjjyxy.xjmu.edu.cn/info/1049/1356.htm",
+
+steps:[
+
+"Prepare IELTS and school documents.",
+
+"Take the CSCA subjects required by the 2027 guide.",
+
+"Apply through XJMU International Application System.",
+
+"Submit scholarship / CSC application.",
+
+"Complete document review or interview.",
+
+"Receive admission and funding decision."
+
+]
+
+},
+
+
+{
+name:"Shanghai Jiao Tong University School of Medicine",
+
+city:"Shanghai",
+
+program:"Clinical Medicine (MBBS) — English",
+
+duration:"6 years",
+
+status:"watch",
+
+fit:
+"Очень сильный университет, но полный scholarship для English MBBS 2027 нужно подтвердить перед оплатой.",
+
+funding:{
+
+tuition:
+"2027 full funding unconfirmed",
+
+dorm:
+"Depends on scholarship",
+
+insurance:
+"Depends on scholarship",
+
+stipend:
+"Depends on scholarship"
+
+},
+
+ielts:
+"IELTS ≥ 6.0; each component ≥ 5.0",
+
+csca:
+"Math + Physics + Chemistry (2026)",
+
+sat:
+"Not mandatory in 2026 guide",
+
+fee:
+"800 RMB non-refundable (2026)",
+
+portal:
+"http://applyiso.shsmu.edu.cn/",
+
+source:
+"https://www.shsmu.edu.cn/iso/info/1108/1486.htm",
+
+steps:[
+
+"Prepare CSCA Math + Physics + Chemistry.",
+
+"Prepare IELTS and school documents.",
+
+"Prepare personal statement and 2 recommendations.",
+
+"Confirm full scholarship for 2027.",
+
+"Only then pay application fee and apply."
+
+]
+
+},
+
+
+{
+name:"Shandong University",
+
+city:"Jinan",
+
+program:"MBBS — English",
+
+duration:"6 years",
+
+status:"backup",
+
+fit:
+"Хороший вариант с низкими первоначальными расходами, но полный funding package пока не подтверждён.",
+
+funding:{
+
+tuition:
+"Scholarship dependent",
+
+dorm:
+"Not confirmed",
+
+insurance:
+"Not confirmed",
+
+stipend:
+"Not confirmed"
+
+},
+
+ielts:
+"Recheck in 2027 guide",
+
+csca:
+"Recheck in 2027 guide",
+
+sat:
+"Recheck in 2027 guide",
+
+fee:
+"400 RMB reportedly payable after admission",
+
+portal:
+"https://www.istudy.sdu.edu.cn/",
+
+source:
+"https://www.mbbs.sdu.edu.cn/Admission.htm",
+
+steps:[
+
+"Wait for 2027 guide.",
+
+"Confirm MBBS requirements.",
+
+"Confirm full scholarship availability.",
+
+"Apply through the official portal."
+
+]
+
+},
+
+
+{
+name:"Huazhong University of Science and Technology (HUST)",
+
+city:"Wuhan",
+
+program:"Clinical Medicine (MBBS) — English",
+
+duration:"6 years",
+
+status:"watch",
+
+fit:
+"Сильный университет, но undergraduate full CSC для English MBBS пока не подтверждён.",
+
+funding:{
+
+tuition:
+"Potential route — unconfirmed",
+
+dorm:
+"Unconfirmed",
+
+insurance:
+"Unconfirmed",
+
+stipend:
+"Unconfirmed"
+
+},
+
+ielts:
+"Recheck in 2027 guide",
+
+csca:
+"Recheck in 2027 guide",
+
+sat:
+"Recheck in 2027 guide",
+
+fee:
+"600 RMB / US$100 in 2026",
+
+portal:
+"https://iso.hust.edu.cn/",
+
+source:
+"https://iso.hust.edu.cn/",
+
+steps:[
+
+"Wait for 2027 MBBS guide.",
+
+"Verify full scholarship eligibility.",
+
+"Only pay the fee if funding is confirmed.",
+
+"Apply through the official HUST portal."
+
+]
+
+}
+
+];
+
+
+
+/* UNIVERSITY RENDERING */
+
+function renderUniversities(){
+
+const query=
+(document.getElementById("search").value||"")
+.toLowerCase();
+
+const status=
+document.getElementById("statusFilter").value;
+
+const filtered=
+universities.filter(u=>
+
+(status==="all" || u.status===status)
+
+&&
+
+(u.name+" "+u.city+" "+u.program)
+.toLowerCase()
+.includes(query)
+
+);
+
+
+document.getElementById("uniGrid").innerHTML=
+
+filtered.map(u=>`
+
+<article class="uni-card">
+
+<div class="uni-top">
+
+<div>
+
+<h4>
+${u.name}
+</h4>
+
+<div class="uni-meta">
+${u.city}
+•
+${u.program}
+•
+${u.duration}
+</div>
+
+</div>
+
+<span class="badge ${u.status}">
+${u.status.toUpperCase()}
+</span>
+
+</div>
+
+
+<div class="fit">
+${u.fit}
+</div>
+
+
+<div class="funding">
+
+<div class="fund">
+
+<span>
+Tuition
+</span>
+
+<b>
+${u.funding.tuition}
+</b>
+
+</div>
+
+
+<div class="fund">
+
+<span>
+Dorm
+</span>
+
+<b>
+${u.funding.dorm}
+</b>
+
+</div>
+
+
+<div class="fund">
+
+<span>
+Insurance
+</span>
+
+<b>
+${u.funding.insurance}
+</b>
+
+</div>
+
+
+<div class="fund">
+
+<span>
+Stipend
+</span>
+
+<b>
+${u.funding.stipend}
+</b>
+
+</div>
+
+</div>
+
+
+<div>
+
+<div class="info-row">
+
+<span>
+IELTS
+</span>
+
+<b>
+${u.ielts}
+</b>
+
+</div>
+
+
+<div class="info-row">
+
+<span>
+CSCA
+</span>
+
+<b>
+${u.csca}
+</b>
+
+</div>
+
+
+<div class="info-row">
+
+<span>
+SAT
+</span>
+
+<b>
+${u.sat}
+</b>
+
+</div>
+
+
+<div class="info-row">
+
+<span>
+Application fee
+</span>
+
+<b>
+${u.fee}
+</b>
+
+</div>
+
+</div>
+
+
+<details>
+
+<summary>
+Путь подачи
+</summary>
+
+<ol>
+
+${u.steps.map(step=>
+`<li>${step}</li>`
+).join("")}
+
+</ol>
+
+</details>
+
+
+<div class="actions">
+
+<a
+class="btn primary"
+href="${u.portal}"
+target="_blank"
+>
+Official portal
+</a>
+
+
+<a
+class="btn soft"
+href="${u.source}"
+target="_blank"
+>
+Source
+</a>
+
+</div>
+
+</article>
+
+`).join("");
+
+}
+
+
+document
+.getElementById("search")
+.addEventListener(
+"input",
+renderUniversities
+);
+
+
+document
+.getElementById("statusFilter")
+.addEventListener(
+"change",
+renderUniversities
+);
+
+
+renderUniversities();
+
+
+
+/* TABS */
+
+document
+.querySelectorAll(".tab")
+.forEach(button=>{
+
+button.addEventListener(
+"click",
+()=>{
+
+document
+.querySelectorAll(".tab")
+.forEach(x=>
+x.classList.remove("active")
+);
+
+document
+.querySelectorAll(".section")
+.forEach(x=>
+x.classList.remove("active")
+);
+
+button.classList.add("active");
+
+document
+.getElementById(button.dataset.tab)
+.classList.add("active");
+
+}
+
+);
+
+});
+
+
+
+/* CHECKLIST */
+
+const checklistItems=[
+
+"Passport",
+
+"School Transcript",
+
+"Expected Graduation Certificate",
+
+"IELTS",
+
+"CSCA",
+
+"CV",
+
+"Personal Statement",
+
+"Recommendation Letter 1",
+
+"Recommendation Letter 2",
+
+"Portfolio",
+
+"Certificates & Awards",
+
+"Police Clearance",
+
+"Medical Examination",
+
+"Financial Statement",
+
+"Notarized Translations"
+
+];
+
+
+const checklistState=
+JSON.parse(
+localStorage.getItem("medicineChecklist")
+||
+"{}"
+);
+
+
+function renderChecklist(){
+
+const box=
+document.getElementById("checklist");
+
+box.innerHTML=
+
+checklistItems.map((item,index)=>`
+
+<label class="check-item">
+
+<input
+type="checkbox"
+data-index="${index}"
+${checklistState[index]?"checked":""}
+>
+
+<span>
+${item}
+</span>
+
+</label>
+
+`).join("");
+
+
+box
+.querySelectorAll("input")
+.forEach(input=>{
+
+input.addEventListener(
+"change",
+()=>{
+
+checklistState[input.dataset.index]=
+input.checked;
+
+localStorage.setItem(
+"medicineChecklist",
+JSON.stringify(checklistState)
+);
+
+updateProgress();
+
+}
+);
+
+});
+
+updateProgress();
+
+}
+
+
+function updateProgress(){
+
+const completed=
+
+checklistItems.filter(
+(_,index)=>
+checklistState[index]
+).length;
+
+
+document
+.getElementById("progressText")
+.textContent=
+
+completed+
+" / "+
+checklistItems.length+
+" готово";
+
+
+document
+.getElementById("progressBar")
+.style.width=
+
+(completed/checklistItems.length*100)
++"%";
+
+}
+
+
+renderChecklist();
+
+
+
+/* DOCUMENT DATABASE */
+
+const DATABASE_NAME=
+"MedicineApplicationVault";
+
+const STORE_NAME=
+"documents";
+
+
+function openDatabase(){
+
+return new Promise(
+(resolve,reject)=>{
+
+const request=
+indexedDB.open(
+DATABASE_NAME,
+1
+);
+
+
+request.onupgradeneeded=
+()=>{
+
+if(
+!request.result
+.objectStoreNames
+.contains(STORE_NAME)
+){
+
+request.result
+.createObjectStore(
+STORE_NAME,
+{
+keyPath:"id",
+autoIncrement:true
+}
+);
+
+}
+
+};
+
+
+request.onsuccess=
+()=>resolve(request.result);
+
+
+request.onerror=
+()=>reject(request.error);
+
+}
+);
+
+}
+
+
+
+async function saveDocument(documentData){
+
+const database=
+await openDatabase();
+
+
+return new Promise(
+(resolve,reject)=>{
+
+const transaction=
+database.transaction(
+STORE_NAME,
+"readwrite"
+);
+
+
+transaction
+.objectStore(STORE_NAME)
+.add(documentData);
+
+
+transaction.oncomplete=
+resolve;
+
+
+transaction.onerror=
+()=>reject(transaction.error);
+
+}
+);
+
+}
+
+
+
+async function getDocuments(){
+
+const database=
+await openDatabase();
+
+
+return new Promise(
+(resolve,reject)=>{
+
+const request=
+
+database
+.transaction(STORE_NAME)
+.objectStore(STORE_NAME)
+.getAll();
+
+
+request.onsuccess=
+()=>resolve(request.result);
+
+
+request.onerror=
+()=>reject(request.error);
+
+}
+);
+
+}
+
+
+
+async function deleteDocument(id){
+
+const database=
+await openDatabase();
+
+
+return new Promise(
+(resolve,reject)=>{
+
+const transaction=
+database.transaction(
+STORE_NAME,
+"readwrite"
+);
+
+
+transaction
+.objectStore(STORE_NAME)
+.delete(id);
+
+
+transaction.oncomplete=
+resolve;
+
+
+transaction.onerror=
+()=>reject(transaction.error);
+
+}
+);
+
+}
+
+
+
+/* CURRENT CATEGORY */
+
+let currentCategory="all";
+
+
+const categoryNames={
+
+all:"Все документы",
+
+identity:"Identity & School",
+
+exams:"Exams",
+
+application:"Application Core",
+
+portfolio:"Portfolio",
+
+certificates:"Certificates & Awards",
+
+medical:"Medical & Legal",
+
+finance:"Financial",
+
+university:"University-specific"
+
+};
+
+
+
+document
+.querySelectorAll(".category-btn")
+.forEach(button=>{
+
+button.addEventListener(
+"click",
+()=>{
+
+document
+.querySelectorAll(".category-btn")
+.forEach(x=>
+x.classList.remove("active")
+);
+
+button.classList.add("active");
+
+currentCategory=
+button.dataset.category;
+
+document
+.getElementById("vaultTitle")
+.textContent=
+categoryNames[currentCategory];
+
+renderDocuments();
+
+}
+);
+
+});
+
+
+
+async function renderDocuments(){
+
+let documents=
+await getDocuments();
+
+
+if(currentCategory!=="all"){
+
+documents=
+documents.filter(
+doc=>
+doc.category===currentCategory
+);
+
+}
+
+
+const list=
+document.getElementById("docList");
+
+
+if(!documents.length){
+
+list.innerHTML=
+
+`
+<div class="muted">
+Документов в этой категории пока нет.
+</div>
+`;
+
+return;
+
+}
+
+
+list.innerHTML=
+
+documents.map(doc=>`
+
+<div class="doc-card">
+
+<div>
+
+<div class="doc-title">
+${doc.label}
+</div>
+
+
+<div class="doc-meta">
+
+${categoryNames[doc.category]}
+
+${doc.university
+?
+" • "+doc.university
+:
+""
+}
+
+</div>
+
+
+<div class="tag">
+${doc.status}
+</div>
+
+${doc.expiry
+?
+`<div class="doc-meta">
+Valid until: ${doc.expiry}
+</div>`
+:
+""
+}
+
+</div>
+
+
+<div>
+
+<button
+class="btn"
+onclick="removeDocument(${doc.id})"
+>
+Удалить
+</button>
+
+</div>
+
+</div>
+
+`).join("");
+
+}
+
+
+
+window.removeDocument=
+async function(id){
+
+if(
+confirm(
+"Удалить этот документ из локального хранилища?"
+)
+){
+
+await deleteDocument(id);
+
+renderDocuments();
+
+}
+
+};
+
+
+
+document
+.getElementById("saveDoc")
+.addEventListener(
+"click",
+async()=>{
+
+const file=
+
+document
+.getElementById("docFile")
+.files[0];
+
+
+const message=
+
+document
+.getElementById("docMsg");
+
+
+if(!file){
+
+message.textContent=
+"Сначала выбери файл.";
+
+return;
+
+}
+
+
+const newDocument={
+
+label:
+
+document
+.getElementById("docLabel")
+.value
+.trim()
+
+||
+
+file.name,
+
+
+category:
+
+document
+.getElementById("docCategory")
+.value,
+
+
+university:
+
+document
+.getElementById("docUniversity")
+.value
+.trim(),
+
+
+status:
+
+document
+.getElementById("docStatus")
+.value,
+
+
+expiry:
+
+document
+.getElementById("docExpiry")
+.value,
+
+
+fileName:
+
+file.name,
+
+
+fileType:
+
+file.type,
+
+
+fileSize:
+
+file.size,
+
+
+file:
+
+file,
+
+
+added:
+
+new Date()
+.toISOString()
+
+};
+
+
+await saveDocument(
+newDocument
+);
+
+
+message.textContent=
+"Документ сохранён локально.";
+
+
+document
+.getElementById("docLabel")
+.value="";
+
+
+document
+.getElementById("docUniversity")
+.value="";
+
+
+document
+.getElementById("docExpiry")
+.value="";
+
+
+document
+.getElementById("docFile")
+.value="";
+
+
+renderDocuments();
+
+}
+);
+
+
+renderDocuments();
+
+</script>
+
+</body>
+</html>
