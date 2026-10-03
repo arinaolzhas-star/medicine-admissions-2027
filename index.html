@@ -759,6 +759,379 @@ ol{
   }
 }
 
+/* HONG KONG */
+
+.hk-summary{
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(320px,.65fr);
+  gap:17px;
+  margin-bottom:17px;
+}
+
+.hk-card{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:20px;
+  min-width:0;
+}
+
+.hk-badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin-top:12px;
+}
+
+.hk-badge{
+  padding:6px 9px;
+  border-radius:999px;
+  font-size:10px;
+  font-weight:800;
+  background:var(--blueSoft);
+  color:var(--blue);
+}
+
+.hk-badge.good{
+  background:var(--greenSoft);
+  color:var(--green);
+}
+
+.hk-badge.warn{
+  background:var(--amberSoft);
+  color:var(--amber);
+}
+
+.hk-top-stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:9px;
+  margin-bottom:17px;
+}
+
+.hk-top-stat{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:14px;
+}
+
+.hk-top-stat span{
+  color:var(--muted);
+  font-size:10px;
+}
+
+.hk-top-stat b{
+  display:block;
+  margin-top:4px;
+  font-size:17px;
+  line-height:1.3;
+}
+
+.hk-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:17px;
+  margin-bottom:17px;
+}
+
+.hk-uni-card{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:19px;
+  padding:21px;
+  min-width:0;
+}
+
+.hk-uni-title{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items:flex-start;
+}
+
+.hk-uni-title h4{
+  margin:0 0 4px;
+  font-size:20px;
+}
+
+.hk-important{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin:14px 0;
+}
+
+.hk-important div{
+  background:#f7f9fc;
+  border-radius:11px;
+  padding:10px;
+}
+
+.hk-important span{
+  display:block;
+  color:var(--muted);
+  font-size:9px;
+}
+
+.hk-important b{
+  display:block;
+  margin-top:3px;
+  font-size:11px;
+  line-height:1.35;
+}
+
+.hk-warning{
+  background:#fff0f0;
+  border:1px solid #ffd8d8;
+  color:#b73535;
+  border-radius:11px;
+  padding:10px 12px;
+  font-size:11px;
+  font-weight:800;
+  margin-top:12px;
+}
+
+.hk-details{
+  margin-top:12px;
+}
+
+.hk-detail-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0 18px;
+}
+
+.hk-detail{
+  padding:9px 0;
+  border-top:1px solid var(--line);
+  font-size:11px;
+  line-height:1.45;
+}
+
+.hk-detail span{
+  display:block;
+  color:var(--muted);
+  font-size:9px;
+  margin-bottom:2px;
+}
+
+.hk-source-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:12px;
+}
+
+.hk-deadline-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:9px;
+  margin-top:12px;
+}
+
+.hk-deadline{
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:12px;
+  background:#fbfcff;
+}
+
+.hk-deadline span{
+  display:block;
+  color:var(--muted);
+  font-size:9px;
+}
+
+.hk-deadline b{
+  display:block;
+  margin:3px 0;
+  font-size:13px;
+}
+
+.hk-countdown{
+  color:var(--primary);
+  font-size:10px;
+  font-weight:800;
+}
+
+.hk-countdown.overdue{
+  color:#c43c3c;
+}
+
+.hk-section{
+  margin-bottom:17px;
+}
+
+.hk-tracker-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:17px;
+  margin-bottom:17px;
+}
+
+.hk-mini-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:9px;
+}
+
+.hk-form-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:9px;
+  margin-top:12px;
+}
+
+.hk-form-grid .full{
+  grid-column:1/-1;
+}
+
+.hk-checklist{
+  display:grid;
+  gap:7px;
+  margin-top:10px;
+}
+
+.hk-check{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:8px;
+  align-items:start;
+  border:1px solid var(--line);
+  border-radius:11px;
+  padding:9px 10px;
+}
+
+.hk-check.done{
+  background:var(--greenSoft);
+}
+
+.hk-table-wrap{
+  width:100%;
+  overflow:auto;
+}
+
+.hk-table{
+  width:100%;
+  border-collapse:collapse;
+  min-width:1050px;
+}
+
+.hk-table th,
+.hk-table td{
+  text-align:left;
+  padding:9px 8px;
+  border-bottom:1px solid var(--line);
+  font-size:10px;
+  vertical-align:top;
+}
+
+.hk-table th{
+  color:var(--muted);
+  font-weight:800;
+}
+
+.hk-input,
+.hk-select{
+  width:100%;
+  border:1px solid var(--line);
+  background:white;
+  border-radius:8px;
+  padding:7px 8px;
+  font-size:10px;
+  color:var(--text);
+}
+
+.hk-status-pipeline{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:9px;
+}
+
+.hk-timeline{
+  display:grid;
+  gap:8px;
+}
+
+.hk-timeline-group{
+  border:1px solid var(--line);
+  border-radius:13px;
+  padding:12px;
+  background:white;
+}
+
+.hk-timeline-head{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  align-items:center;
+  margin-bottom:8px;
+}
+
+.hk-timeline-head b{
+  font-size:12px;
+}
+
+.hk-calendar{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:9px;
+}
+
+.hk-month{
+  border:1px solid var(--line);
+  border-radius:13px;
+  padding:13px;
+  background:#fbfcff;
+}
+
+.hk-month b{
+  display:block;
+  margin-bottom:7px;
+}
+
+.hk-month div{
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.5;
+}
+
+.hk-readiness{
+  height:9px;
+  background:#edf0f5;
+  border-radius:999px;
+  overflow:hidden;
+  margin-top:6px;
+}
+
+.hk-readiness div{
+  height:100%;
+  background:linear-gradient(90deg,#16865a,#49b981);
+}
+
+.hk-red{
+  color:#c43c3c;
+  font-weight:800;
+}
+
+@media(max-width:1100px){
+  .hk-summary,
+  .hk-grid,
+  .hk-tracker-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hk-top-stats,
+  .hk-deadline-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .hk-calendar{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
 /* KAZAKHSTAN */
 
 .kz-top-grid{
@@ -1225,6 +1598,21 @@ footer{
     grid-template-columns:auto minmax(0,1fr) auto;
   }
 
+  .hk-top-stats,
+  .hk-deadline-grid,
+  .hk-calendar,
+  .hk-important,
+  .hk-detail-grid,
+  .hk-form-grid,
+  .hk-status-pipeline{
+    grid-template-columns:1fr;
+  }
+
+  .hk-card,
+  .hk-uni-card{
+    padding:16px;
+  }
+
   .kz-priorities,
   .kz-target-row,
   .kz-filters,
@@ -1267,8 +1655,8 @@ footer{
   </div>
 
   <div class="update-status">
-    <div><b>Last checked:</b> 03 Oct 2026, 12:10</div>
-    <div><b>Last data change:</b> 03 Oct 2026, 12:10</div>
+    <div><b>Last checked:</b> 03 Oct 2026, 12:34</div>
+    <div><b>Last data change:</b> 03 Oct 2026, 12:34</div>
   </div>
 
 </div>
@@ -1328,6 +1716,10 @@ footer{
 
   <button class="tab" data-tab="china">
     🇨🇳 Китай
+  </button>
+
+  <button class="tab" data-tab="hongkong">
+    🇭🇰 Hong Kong
   </button>
 
   <button class="tab" data-tab="kazakhstan">
@@ -1627,6 +2019,335 @@ footer{
 
 
   <div id="uniGrid" class="uni-grid"></div>
+
+</section>
+
+
+
+<!-- HONG KONG -->
+
+<section id="hongkong" class="section">
+
+  <div class="section-title">
+    <h3>🇭🇰 Hong Kong — Direct Medicine 2027</h3>
+    <p>HKU MBBS + CUHK MBChB • international applicant from Kazakhstan • funding-first strategy</p>
+  </div>
+
+  <div class="hk-summary">
+    <div class="hk-card">
+      <div class="today-kicker">Goal</div>
+      <h4>Direct Medicine after Grade 12</h4>
+      <div class="muted">Tracked: HKU MBBS and CUHK MBChB. Apply, but enrol only if major/full funding makes the total cost affordable.</div>
+
+      <div class="hk-badges">
+        <span class="hk-badge good">Direct Medicine ✅</span>
+        <span class="hk-badge good">English-medium ✅</span>
+        <span class="hk-badge good">International applicant ✅</span>
+        <span class="hk-badge good">Kazakhstan qualification accepted ✅</span>
+        <span class="hk-badge good">SAT mandatory ❌</span>
+        <span class="hk-badge warn">Competitive admission ⚠️</span>
+        <span class="hk-badge warn">Funding must be secured ⚠️</span>
+      </div>
+    </div>
+
+    <div class="hk-card">
+      <div class="today-kicker">Funding rule</div>
+      <h4>Do not commit before award details are known</h4>
+      <div class="hk-warning">DO NOT ENROL WITHOUT MAJOR/FULL FUNDING.</div>
+      <div class="muted" style="margin-top:10px">Scholarships are competitive. Admission or scholarship is never guaranteed by meeting published minimums.</div>
+    </div>
+  </div>
+
+  <div class="hk-top-stats">
+    <div class="hk-top-stat"><span>NEXT ACTION</span><b id="hkNextAction">—</b></div>
+    <div class="hk-top-stat"><span>NEXT DOCUMENT DEADLINE</span><b id="hkNextDocDeadline">—</b></div>
+    <div class="hk-top-stat"><span>NEXT UNIVERSITY DEADLINE</span><b id="hkNextUniversityDeadline">—</b></div>
+    <div class="hk-top-stat"><span>APPLICATION READINESS</span><b id="hkReadinessSummary">HKU 0% • CUHK 0%</b></div>
+  </div>
+
+  <div class="hk-grid">
+
+    <article class="hk-uni-card">
+      <div class="hk-uni-title">
+        <div>
+          <h4>The University of Hong Kong</h4>
+          <div class="uni-meta">Faculty of Medicine • MBBS • Hong Kong • 6 years</div>
+        </div>
+        <span class="badge core">ACTIVE — APPLY FOR 2027</span>
+      </div>
+
+      <div class="hk-important">
+        <div><span>Kazakhstan route</span><b>Attestat avg 4.5/5+ + UNT 80%+</b></div>
+        <div><span>IELTS Academic</span><b>6.5 overall; W 6.0+; S 6.0+</b></div>
+        <div><span>SAT</span><b>Not required for Kazakhstan route</b></div>
+        <div><span>Personal target</span><b>15 Nov 2026</b></div>
+        <div><span>Official first round</span><b>25 Nov 2026, noon HKT</b></div>
+        <div><span>2027/28 tuition</span><b>HK$590,000/year</b></div>
+      </div>
+
+      <div class="hk-deadline-grid">
+        <div class="hk-deadline"><span>Application opened</span><b>23 Sep 2026</b><div class="hk-countdown">Open</div></div>
+        <div class="hk-deadline"><span>My submission target</span><b>15 Nov 2026</b><div id="hkuTargetCountdown" class="hk-countdown"></div></div>
+        <div class="hk-deadline"><span>First-round deadline</span><b>25 Nov 2026</b><div id="hkuOfficialCountdown" class="hk-countdown"></div></div>
+        <div class="hk-deadline"><span>Final application close</span><b>25 Aug 2027, noon HKT</b><div class="hk-countdown">Rolling after first round</div></div>
+      </div>
+
+      <div class="hk-warning">Medicine is much more competitive than HKU's published lower-boundary requirements. Meeting minimums does not guarantee admission.</div>
+
+      <details class="hk-details">
+        <summary>Подробнее</summary>
+        <div class="hk-detail-grid">
+          <div class="hk-detail"><span>Qualification route</span>Kazakh Certificate of Completed Secondary Education / Attestat with overall average 4.5/5 or better and UNT overall 80% or better.</div>
+          <div class="hk-detail"><span>IELTS validity</span>Same attempt; overall 6.5+, Writing 6.0+, Speaking 6.0+; test valid within 2 years before programme start.</div>
+          <div class="hk-detail"><span>Interview schedule — 2027 international qualifications</span>15–16 Dec 2026; 31 Mar 2027; 12 Jul 2027; 20 Aug 2027.</div>
+          <div class="hk-detail"><span>Application fee</span>HK$780, non-refundable (2027 intake).</div>
+          <div class="hk-detail"><span>Estimated tuition over 6 years</span>HK$3,540,000 before living expenses, if annual tuition stayed at HK$590,000; actual future annual tuition can change.</div>
+          <div class="hk-detail"><span>Interim / predicted results</span>HKU allows application with interim, predicted or anticipated results and later uploads when results become available.</div>
+        </div>
+
+        <div class="hk-source-links">
+          <a class="btn soft" target="_blank" rel="noopener" href="https://admissions.hku.hk/node/2273">Official Kazakhstan requirements</a>
+          <a class="btn soft" target="_blank" rel="noopener" href="https://admissions.hku.hk/apply/international-qualifications">Official dates</a>
+          <a class="btn soft" target="_blank" rel="noopener" href="https://www.admissions.hku.hk/apply/international-qualifications/interview">Official interview schedule</a>
+          <a class="btn soft" target="_blank" rel="noopener" href="https://admissions.hku.hk/fees-and-scholarships/fees">Official fees</a>
+        </div>
+      </details>
+    </article>
+
+    <article class="hk-uni-card">
+      <div class="hk-uni-title">
+        <div>
+          <h4>The Chinese University of Hong Kong</h4>
+          <div class="uni-meta">Faculty of Medicine • MBChB • Hong Kong • 6 years</div>
+        </div>
+        <span class="badge core">DIRECT MEDICINE</span>
+      </div>
+
+      <div class="hk-important">
+        <div><span>Kazakhstan route</span><b>Grade 4/5+ in each subject + UNT 80%+</b></div>
+        <div><span>IELTS Academic</span><b>6.0 overall</b></div>
+        <div><span>SAT</span><b>Not mandatory for Kazakhstan route</b></div>
+        <div><span>Personal target</span><b>15 Dec 2026</b></div>
+        <div><span>Medicine deadline</span><b>7 Jan 2027</b></div>
+        <div><span>2027/28 tuition</span><b>HK$230,000/year</b></div>
+      </div>
+
+      <div class="hk-deadline-grid">
+        <div class="hk-deadline"><span>Application opened</span><b>2 Oct 2026</b><div class="hk-countdown">Open</div></div>
+        <div class="hk-deadline"><span>My submission target</span><b>15 Dec 2026</b><div id="cuhkTargetCountdown" class="hk-countdown"></div></div>
+        <div class="hk-deadline"><span>Official Medicine deadline</span><b>7 Jan 2027</b><div id="cuhkOfficialCountdown" class="hk-countdown"></div></div>
+        <div class="hk-deadline"><span>Advance Offer Round</span><b>Not applicable to Medicine</b><div class="hk-countdown">Regular round required</div></div>
+      </div>
+
+      <div class="hk-warning">CUHK published Kazakhstan figures are university minimums, not typical Medicine admission scores. MBChB admission is highly competitive.</div>
+
+      <details class="hk-details">
+        <summary>Подробнее</summary>
+        <div class="hk-detail-grid">
+          <div class="hk-detail"><span>Supporting documents</span>Passport; high-school reports/transcripts; graduation certificate when available; public examination results; UNT; IELTS; achievement certificates; Medicine personal statement; optional CV; academic referee recommendation.</div>
+          <div class="hk-detail"><span>Medicine personal statement</span>Separate statement required, maximum 250 words.</div>
+          <div class="hk-detail"><span>Referees</span>Up to 3 academic referees. After application submission and fee payment, referees receive an email invitation for confidential recommendation.</div>
+          <div class="hk-detail"><span>Application fee</span>HK$500, non-refundable (2027 entry).</div>
+          <div class="hk-detail"><span>Hostel</span>Approx. HK$17,000/year based on 2026/27 published information.</div>
+          <div class="hk-detail"><span>Living / other expenses</span>Approx. HK$48,500/year on current 2027 admissions FAQ.</div>
+          <div class="hk-detail"><span>Estimated first-year cost</span>Approx. HK$295,500 using current published tuition + hostel + living figures. Costs can change annually.</div>
+          <div class="hk-detail"><span>Later results</span>CUHK allows applicants to apply before pending examination results are released and upload them once available.</div>
+        </div>
+
+        <div class="hk-source-links">
+          <a class="btn soft" target="_blank" rel="noopener" href="https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/requirements/">Official Kazakhstan requirements</a>
+          <a class="btn soft" target="_blank" rel="noopener" href="https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/important-dates/">Official dates</a>
+          <a class="btn soft" target="_blank" rel="noopener" href="https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/application-guides/">Official application guide</a>
+          <a class="btn soft" target="_blank" rel="noopener" href="https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/faq/">Official FAQ / fees</a>
+        </div>
+      </details>
+    </article>
+
+  </div>
+
+  <div class="hk-tracker-grid">
+
+    <div class="hk-card">
+      <div class="today-kicker">HKU interview tracker</div>
+      <h4>MBBS interview preparation</h4>
+      <select id="hkuInterviewStatus" class="field">
+        <option>Not started</option>
+        <option>Preparing</option>
+        <option>Ready</option>
+        <option>Completed</option>
+      </select>
+      <div id="hkuInterviewChecklist" class="hk-checklist"></div>
+    </div>
+
+    <div class="hk-card">
+      <div class="today-kicker">Application status pipeline</div>
+      <h4>HKU + CUHK</h4>
+      <div class="hk-status-pipeline">
+        <div>
+          <div class="muted">HKU</div>
+          <select id="hkuPipeline" class="field"></select>
+        </div>
+        <div>
+          <div class="muted">CUHK</div>
+          <select id="cuhkPipeline" class="field"></select>
+        </div>
+      </div>
+
+      <div class="hk-form-grid">
+        <div><div class="muted">HKU fee paid?</div><select id="hkuFeePaid" class="field"><option>No</option><option>Yes</option></select></div>
+        <div><div class="muted">HKU payment date</div><input id="hkuFeeDate" type="date" class="field"></div>
+        <div><div class="muted">CUHK fee paid?</div><select id="cuhkFeePaid" class="field"><option>No</option><option>Yes</option></select></div>
+        <div><div class="muted">CUHK payment date</div><input id="cuhkFeeDate" type="date" class="field"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hk-tracker-grid">
+
+    <div class="hk-card">
+      <div class="today-kicker">HKU scholarships</div>
+      <h4>Funding tracker</h4>
+      <div class="hk-detail"><span>HKU Entrance Scholarship</span>Automatic consideration after admission application. Selection is merit-based with academic and non-academic achievements. Packages can reach full tuition plus accommodation and general living allowance, but the exact 2027 award is not guaranteed.</div>
+      <div class="hk-detail"><span>Belt and Road Scholarship</span>Kazakhstan is an eligible participating country under the current official 2026 information. 2027 terms are subject to change. Current 2026 package states full tuition for non-local students.</div>
+      <div class="hk-warning">WATCH FOR 2027 UPDATE — do not assume the 2027 Belt and Road award will automatically cover HK$590,000 MBBS tuition until HKU confirms the 2027 terms.</div>
+      <div id="hkuScholarshipChecklist" class="hk-checklist"></div>
+      <div class="hk-source-links">
+        <a class="btn soft" target="_blank" rel="noopener" href="https://www.admissions.hku.hk/node/140">Entrance scholarship source</a>
+        <a class="btn soft" target="_blank" rel="noopener" href="https://www.admissions.hku.hk/fees-and-scholarships/scholarships/belt-and-road-scholarship">Belt and Road source</a>
+      </div>
+    </div>
+
+    <div class="hk-card">
+      <div class="today-kicker">CUHK scholarships</div>
+      <h4>Admission Scholarship tracker</h4>
+      <div class="hk-detail"><span>Status</span>Automatic consideration / merit-based for admitted full-time undergraduates under current CUHK information.</div>
+      <div class="hk-detail"><span>Possible award</span>Admission Scholarships range from HK$5,000 to full-tuition coverage. Some include an allowance up to HK$66,000/year.</div>
+      <div class="hk-warning">COMPETITIVE — do not treat this as a guaranteed full ride. Attend only if the final award makes tuition + hostel + living costs affordable / near-full funded.</div>
+      <div id="cuhkScholarshipChecklist" class="hk-checklist"></div>
+      <div class="hk-source-links">
+        <a class="btn soft" target="_blank" rel="noopener" href="https://admission.cuhk.edu.hk/fees-financing-your-studies/scholarships/admission-scholarships-for-undergraduates-only/">Official scholarship source</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="hk-card hk-section">
+    <div class="today-card-head">
+      <div>
+        <div class="today-kicker">Hong Kong application documents</div>
+        <h4>Master document preparation tracker</h4>
+      </div>
+      <div class="muted">Status + Vault link + internal deadlines</div>
+    </div>
+    <div class="hk-table-wrap">
+      <table class="hk-table">
+        <thead>
+          <tr>
+            <th>Document</th><th>University</th><th>Required?</th><th>Status</th><th>Start by</th><th>My deadline</th><th>Official deadline</th><th>Vault?</th><th>Ready?</th><th>Notes</th><th>Open</th><th>Download</th>
+          </tr>
+        </thead>
+        <tbody id="hkDocumentTable"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="hk-card hk-section">
+    <div class="today-card-head">
+      <div>
+        <div class="today-kicker">Personal document deadlines</div>
+        <h4>October–January action plan</h4>
+      </div>
+      <div class="muted">Internal deadlines are intentionally earlier than official deadlines</div>
+    </div>
+    <div id="hkPersonalTimeline" class="hk-timeline"></div>
+  </div>
+
+  <div class="hk-tracker-grid">
+
+    <div class="hk-card">
+      <div class="today-kicker">IELTS tracker</div>
+      <h4>Hong Kong English requirements</h4>
+      <div class="muted">HKU: 6.5 overall, Writing ≥6.0, Speaking ≥6.0. CUHK: 6.0 overall. User target: 7.0+.</div>
+      <div class="hk-form-grid">
+        <div><div class="muted">Test booked?</div><select id="hkIeltsBooked" class="field"><option>No</option><option>Yes</option></select></div>
+        <div><div class="muted">Status</div><select id="hkIeltsStatus" class="field"><option>Pending</option><option>Booked</option><option>Taken</option><option>Result available</option><option>Will upload later</option><option>Uploaded</option></select></div>
+        <div><div class="muted">Test date</div><input id="hkIeltsDate" type="date" class="field"></div>
+        <div><div class="muted">Result date</div><input id="hkIeltsResultDate" type="date" class="field"></div>
+        <div><div class="muted">Overall</div><input id="hkIeltsOverall" type="number" step=".5" min="0" max="9" class="field"></div>
+        <div><div class="muted">Listening</div><input id="hkIeltsListening" type="number" step=".5" min="0" max="9" class="field"></div>
+        <div><div class="muted">Reading</div><input id="hkIeltsReading" type="number" step=".5" min="0" max="9" class="field"></div>
+        <div><div class="muted">Writing</div><input id="hkIeltsWriting" type="number" step=".5" min="0" max="9" class="field"></div>
+        <div><div class="muted">Speaking</div><input id="hkIeltsSpeaking" type="number" step=".5" min="0" max="9" class="field"></div>
+      </div>
+      <div id="hkIeltsResult" class="kz-note"></div>
+    </div>
+
+    <div class="hk-card">
+      <div class="today-kicker">UNT tracker</div>
+      <h4>Kazakhstan qualification route</h4>
+      <div class="muted">HKU lower boundary: 80%+. CUHK lower boundary: 80%+. SAT is not required for this Kazakhstan route.</div>
+      <div class="hk-form-grid">
+        <div><div class="muted">Status</div><select id="hkUntStatus" class="field"><option>Not taken</option><option>Booked</option><option>Taken</option><option>Result available</option><option>Uploaded</option></select></div>
+        <div><div class="muted">Expected date</div><input id="hkUntExpectedDate" type="date" class="field"></div>
+        <div><div class="muted">Actual score</div><input id="hkUntScore" type="number" min="0" max="140" class="field"></div>
+        <div><div class="muted">Percentage</div><input id="hkUntPercentage" type="number" min="0" max="100" step=".1" class="field"></div>
+        <div><label><input id="hkUntUploadedHku" type="checkbox"> Uploaded HKU</label></div>
+        <div><label><input id="hkUntUploadedCuhk" type="checkbox"> Uploaded CUHK</label></div>
+      </div>
+      <div id="hkUntResult" class="kz-note"></div>
+    </div>
+
+  </div>
+
+  <div class="hk-tracker-grid">
+
+    <div class="hk-card">
+      <div class="today-kicker">School documents</div>
+      <h4>Current + later results</h4>
+      <div class="muted">Apply now with current/interim/predicted results. Final Attestat / final results / UNT can be uploaded later when available.</div>
+      <div id="hkSchoolDocs" class="hk-checklist"></div>
+      <div class="kz-note">If a document is not in English or Chinese, check whether a certified English translation is required.</div>
+    </div>
+
+    <div class="hk-card">
+      <div class="today-kicker">Portfolio</div>
+      <h4>Awards / activities selector</h4>
+      <div id="hkPortfolioChecklist" class="hk-checklist"></div>
+    </div>
+
+  </div>
+
+  <div class="hk-card hk-section">
+    <div class="today-card-head">
+      <div>
+        <div class="today-kicker">Recommendations</div>
+        <h4>Referee tracker</h4>
+      </div>
+      <div class="muted">Suggested internal deadline: ask referees by 8 Oct 2026</div>
+    </div>
+    <div class="hk-table-wrap">
+      <table class="hk-table">
+        <thead><tr><th>Referee</th><th>Subject / role</th><th>University</th><th>Asked</th><th>Agreed</th><th>Teacher deadline</th><th>Portal invite sent</th><th>Submitted</th><th>Thank-you sent</th></tr></thead>
+        <tbody id="hkRefereeTable"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="hk-card hk-section">
+    <div class="today-card-head">
+      <div>
+        <div class="today-kicker">Admissions calendar</div>
+        <h4>2026–27 overview</h4>
+      </div>
+    </div>
+    <div class="hk-calendar">
+      <div class="hk-month"><b>October 2026</b><div>Documents • transcript requests • referees • CV • statements • portfolio.</div></div>
+      <div class="hk-month"><b>November 2026</b><div>HKU package • personal target 15 Nov • first-round deadline 25 Nov • interview prep.</div></div>
+      <div class="hk-month"><b>December 2026</b><div>CUHK finalisation • target 15 Dec • HKU interview rounds • referee tracking.</div></div>
+      <div class="hk-month"><b>January 2027+</b><div>CUHK official deadline 7 Jan • later IELTS/UNT/final transcript/final diploma • offers • scholarship • visa.</div></div>
+    </div>
+  </div>
 
 </section>
 
@@ -3330,6 +4051,10 @@ if(typeof refreshKzTracker==="function"){
   refreshKzTracker();
 }
 
+if(typeof refreshHongKongTracker==="function"){
+  refreshHongKongTracker();
+}
+
 }
 
 };
@@ -3473,6 +4198,10 @@ if(typeof refreshTodayTracker==="function"){
 
 if(typeof refreshKzTracker==="function"){
   refreshKzTracker();
+}
+
+if(typeof refreshHongKongTracker==="function"){
+  refreshHongKongTracker();
 }
 
 }
@@ -4037,6 +4766,524 @@ document
     addDailyTask();
   }
 });
+
+
+/* HONG KONG TRACKER */
+
+const hkPipelineOptions=[
+  "Researching","Preparing docs","Application ready","Submitted","Fee paid",
+  "Referee pending","Under review","Interview invited","Interview completed",
+  "Conditional offer","Offer","Scholarship pending","Scholarship received",
+  "Rejected","Withdrawn"
+];
+
+const hkuInterviewItems=[
+  "Why medicine?","Why HKU?","Medical ethics","Healthcare issues","Communication",
+  "Teamwork","Leadership","EndoSim/project discussion","Mock interview 1","Mock interview 2","Mock interview 3"
+];
+
+const hkuScholarshipItems=[
+  "Confirm 2027 eligibility","Confirm whether MBBS is eligible","Confirm scholarship amount for 2027",
+  "Confirm whether tuition HK$590,000 MBBS is fully covered","Prepare CV","Prepare achievement portfolio",
+  "Prepare leadership/community evidence","Prepare scholarship essays/statements","Submit scholarship materials if separate application is required"
+];
+
+const cuhkScholarshipItems=[
+  "Check 2027 scholarship terms","Confirm MBChB eligibility","Prepare strongest academic profile",
+  "Upload awards/certificates","Upload CV","Strong Medicine personal statement",
+  "Track scholarship decision","Compare final award with tuition + hostel + living costs"
+];
+
+const hkDocRows=[
+  {doc:"Passport",uni:"HKU + CUHK",req:"Yes",start:"2026-10-03",mine:"2026-10-05",official:"Before submission"},
+  {doc:"Grade 10–12 transcript / reports",uni:"HKU + CUHK",req:"Yes",start:"2026-10-05",mine:"2026-10-25",official:"Before submission"},
+  {doc:"Predicted / interim Grade 12 results",uni:"HKU + CUHK",req:"If available",start:"2026-10-08",mine:"2026-11-01",official:"Before review / update later"},
+  {doc:"IELTS result",uni:"HKU + CUHK",req:"Yes",start:"2026-10-03",mine:"2026-11-08",official:"Can be updated later subject to programme decision"},
+  {doc:"UNT result",uni:"HKU + CUHK",req:"Kazakhstan route",start:"2026-10-03",mine:"2026-12-10",official:"Upload when available"},
+  {doc:"HKU personal statement",uni:"HKU",req:"Yes",start:"2026-10-12",mine:"2026-11-01",official:"25 Nov 2026 first round"},
+  {doc:"CUHK Medicine statement (≤250 words)",uni:"CUHK",req:"Yes",start:"2026-10-12",mine:"2026-12-01",official:"7 Jan 2027"},
+  {doc:"CV / Resume",uni:"HKU + CUHK",req:"Recommended / optional",start:"2026-10-08",mine:"2026-10-25",official:"Before submission"},
+  {doc:"Awards & certificates",uni:"HKU + CUHK",req:"Supporting",start:"2026-10-08",mine:"2026-10-25",official:"Before submission"},
+  {doc:"Academic recommendation",uni:"HKU + CUHK",req:"Yes / strongly relevant",start:"2026-10-03",mine:"2026-10-08",official:"Submit through portal workflow"},
+  {doc:"Belt and Road scholarship materials",uni:"HKU",req:"If applying",start:"2026-10-12",mine:"2026-11-20",official:"2027 deadline pending"},
+  {doc:"Final Attestat",uni:"HKU + CUHK",req:"Later",start:"2027-05-01",mine:"2027-07-15",official:"Upload after graduation when available"}
+];
+
+const hkPersonalGroups=[
+  {date:"2026-10-05",label:"BY 5 OCTOBER 2026",tasks:["Scan passport","Check passport expiry date","Create Hong Kong application folder in Vault","Create HKU folder","Create CUHK folder","Make master list of Grade 10–12 awards/activities","Decide which teachers/counsellor could write recommendations"]},
+  {date:"2026-10-08",label:"BY 8 OCTOBER 2026",tasks:["Request official school transcript / school reports","Ask school/counsellor about predicted Grade 12 results","Ask whether school can provide transcript/recommendation in English","Request school profile if available","Ask first academic referee","Ask second referee"]},
+  {date:"2026-10-12",label:"BY 12 OCTOBER 2026",tasks:["Draft master CV","Collect all major certificates","Collect competition awards","Collect volunteering evidence","Collect research/publication evidence","Collect EndoSim evidence","Create one combined Awards & Activities list"]},
+  {date:"2026-10-15",label:"BY 15 OCTOBER 2026",tasks:["HKU personal statement — first draft","CUHK Medicine 250-word personal statement — first draft","Draft Why Medicine?","Draft Why Hong Kong?","Draft Why HKU?","Draft Why CUHK?"]},
+  {date:"2026-10-20",label:"BY 20 OCTOBER 2026",tasks:["CV version 1 complete","Awards portfolio version 1 complete","Recommendations confirmed","School transcript request status checked","Predicted grades request status checked","IELTS preparation schedule confirmed"]},
+  {date:"2026-10-25",label:"BY 25 OCTOBER 2026",tasks:["HKU personal statement version 2","CUHK 250-word Medicine statement version 2","CV polished","Main certificates scanned as PDF","File names cleaned and standardized","Passport PDF ready","Transcript PDF ready if issued"]},
+  {date:"2026-11-01",label:"BY 1 NOVEMBER 2026 — HKU package 80–90% ready",tasks:["Passport ready","Current transcript/reports ready","Predicted/interim grades if available","CV ready","HKU personal statement ready","Awards/certificates ready","Referee confirmed","Scholarship materials draft","Activities list ready"]},
+  {date:"2026-11-08",label:"BY 8 NOVEMBER 2026",tasks:["HKU application account complete","Enter all current academic results manually","Upload documents","Check programme choice MBBS","Check scholarship section","Review Belt and Road options","Referee information ready"]},
+  {date:"2026-11-12",label:"BY 12 NOVEMBER 2026",tasks:["Final proofread HKU application","Check every PDF opens correctly","Check names/dates match passport","Check application fee payment method","Check referee email"]},
+  {date:"2026-11-15",label:"15 NOVEMBER 2026 — TARGET: SUBMIT HKU MBBS",tasks:["Submit HKU MBBS application","Confirm fee paid","Save application number","Check referee received request","Save submitted application proof","Track missing documents","Begin interview preparation"]},
+  {date:"2026-11-20",label:"BY 20 NOVEMBER 2026",tasks:["Ensure HKU reference is progressing","Upload any missing document","HKU scholarship checklist complete","Begin 2 mock interviews/week"]},
+  {date:"2026-11-25",label:"25 NOVEMBER 2026 — OFFICIAL HKU FIRST-ROUND DEADLINE",tasks:["HKU first-round application complete"]},
+  {date:"2026-11-05",label:"BY 5 NOVEMBER 2026 — CUHK",tasks:["CUHK account created","Programme requirements checked","MBChB selected as intended programme","Kazakhstan qualification route confirmed"]},
+  {date:"2026-11-15",label:"BY 15 NOVEMBER 2026 — CUHK",tasks:["CUHK 250-word Medicine personal statement near-final","CV ready for CUHK","Passport ready for CUHK","Transcript/current version ready","Awards ready","IELTS status entered","Referee list ready"]},
+  {date:"2026-11-25",label:"BY 25 NOVEMBER 2026 — CUHK",tasks:["Recommendation referees confirmed","All available school reports ready","Achievements uploaded to Vault","CUHK personal statement final editing"]},
+  {date:"2026-12-01",label:"BY 1 DECEMBER 2026 — CUHK 90% ready",tasks:["CUHK application fields complete","CUHK documents uploaded","250-word Medicine statement final","Referee information entered","CUHK fee payment ready"]},
+  {date:"2026-12-10",label:"BY 10 DECEMBER 2026",tasks:["Final CUHK document check","Final spelling/name check","Final programme preference check","Verify MBChB selected","Confirm referee email addresses","Check IELTS status","Check UNT status/pending result field if applicable"]},
+  {date:"2026-12-15",label:"15 DECEMBER 2026 — TARGET: SUBMIT CUHK MBChB",tasks:["Submit CUHK MBChB application","Pay HK$500 fee","Save application number","Confirm referees received emails","Track referee submission","Upload later results when available","Start interview prep"]},
+  {date:"2027-01-07",label:"7 JANUARY 2027 — OFFICIAL CUHK MEDICINE DEADLINE",tasks:["CUHK Medicine application complete"]}
+];
+
+const hkSchoolDocItems=[
+  "Grade 10 report/transcript","Grade 11 report/transcript","Grade 12 current/interim transcript",
+  "Predicted Grade 12 results","Expected graduation / student status letter if available",
+  "Final Attestat — upload after graduation","Final transcript — upload after graduation",
+  "School profile — optional/supporting","English translation if necessary"
+];
+
+const hkPortfolioItems=[
+  "EndoSim project summary","Major competition awards","Research/publications","Volunteer activities",
+  "Medical-related experience","Leadership","Innovation/startup activities","Certificates",
+  "Copyright/publication evidence","1-page activities summary"
+];
+
+function hkDaysLeft(key){
+  const today=dateFromKey(localDateKey());
+  const target=dateFromKey(key);
+  return Math.ceil((target-today)/86400000);
+}
+
+function hkCountdownText(key){
+  const diff=hkDaysLeft(key);
+  if(diff<0) return {text:"Overdue by "+Math.abs(diff)+" days",overdue:true};
+  if(diff===0) return {text:"Due today",overdue:false};
+  if(diff===1) return {text:"1 day left",overdue:false};
+  return {text:diff+" days left",overdue:false};
+}
+
+function renderHkCountdowns(){
+  [
+    ["hkuTargetCountdown","2026-11-15"],
+    ["hkuOfficialCountdown","2026-11-25"],
+    ["cuhkTargetCountdown","2026-12-15"],
+    ["cuhkOfficialCountdown","2027-01-07"]
+  ].forEach(([id,date])=>{
+    const node=document.getElementById(id);
+    if(!node) return;
+    const x=hkCountdownText(date);
+    node.textContent=x.text;
+    node.classList.toggle("overdue",x.overdue);
+  });
+}
+
+function renderSimpleChecklist(containerId,key,items){
+  const box=document.getElementById(containerId);
+  if(!box) return;
+  const state=readLocal(key,{});
+
+  box.innerHTML=items.map((item,index)=>`
+    <label class="hk-check ${state[index]?"done":""}">
+      <input type="checkbox" data-simple-key="${key}" data-simple-index="${index}" ${state[index]?"checked":""}>
+      <span>${item}</span>
+    </label>
+  `).join("");
+
+  box.querySelectorAll("[data-simple-key]").forEach(input=>{
+    input.addEventListener("change",()=>{
+      const next=readLocal(input.dataset.simpleKey,{});
+      next[input.dataset.simpleIndex]=input.checked;
+      writeLocal(input.dataset.simpleKey,next);
+      renderSimpleChecklist(containerId,key,items);
+      renderHkTopSummary();
+    });
+  });
+}
+
+function bindHkSelect(id,key,defaultValue){
+  const el=document.getElementById(id);
+  if(!el) return;
+  const saved=localStorage.getItem(key);
+  if(saved!==null) el.value=saved;
+  else if(defaultValue!==undefined) el.value=defaultValue;
+  el.onchange=()=>localStorage.setItem(key,el.value);
+}
+
+function bindHkInput(id,key){
+  const el=document.getElementById(id);
+  if(!el) return;
+  const saved=localStorage.getItem(key);
+  if(saved!==null) el.value=saved;
+  el.oninput=()=>localStorage.setItem(key,el.value);
+}
+
+function renderHkPipeline(){
+  ["hkuPipeline","cuhkPipeline"].forEach(id=>{
+    const el=document.getElementById(id);
+    if(!el) return;
+    el.innerHTML=hkPipelineOptions.map(x=>`<option>${x}</option>`).join("");
+  });
+  bindHkSelect("hkuPipeline","hkHkuPipeline","Researching");
+  bindHkSelect("cuhkPipeline","hkCuhkPipeline","Researching");
+  bindHkSelect("hkuFeePaid","hkHkuFeePaid","No");
+  bindHkSelect("cuhkFeePaid","hkCuhkFeePaid","No");
+  bindHkInput("hkuFeeDate","hkHkuFeeDate");
+  bindHkInput("cuhkFeeDate","hkCuhkFeeDate");
+}
+
+function hkFindVaultDoc(docName,documents){
+  const aliases={
+    "Passport":["passport"],
+    "Grade 10–12 transcript / reports":["transcript","report"],
+    "Predicted / interim Grade 12 results":["predicted","interim"],
+    "IELTS result":["ielts"],
+    "UNT result":["unt","ент"],
+    "HKU personal statement":["hku","personal statement"],
+    "CUHK Medicine statement (≤250 words)":["cuhk","medicine statement","personal statement"],
+    "CV / Resume":["cv","resume"],
+    "Awards & certificates":["award","certificate"],
+    "Academic recommendation":["recommendation","reference"],
+    "Belt and Road scholarship materials":["belt","scholarship"],
+    "Final Attestat":["attestat","аттестат"]
+  };
+  const terms=aliases[docName]||[docName.toLowerCase()];
+  return documents.find(doc=>{
+    const hay=normalizeDocumentText((doc.label||"")+" "+(doc.fileName||"")+" "+(doc.university||""));
+    return terms.every((term,index)=> index===0 ? hay.includes(normalizeDocumentText(term)) : true) ||
+      terms.some(term=>hay.includes(normalizeDocumentText(term)));
+  });
+}
+
+async function renderHkDocumentTable(){
+  const body=document.getElementById("hkDocumentTable");
+  if(!body) return;
+
+  const state=readLocal("hkDocumentTracker",{});
+  let documents=[];
+  try{documents=await getDocuments();}catch(error){documents=[];}
+
+  body.innerHTML=hkDocRows.map((row,index)=>{
+    const rowState=state[index]||{};
+    const match=hkFindVaultDoc(row.doc,documents);
+    const ready=match && match.status==="ready";
+    const vaultLabel=match ? (ready?"Ready in Vault ✅":"Uploaded ⚠️") : "Missing ⚠️";
+
+    return `
+      <tr>
+        <td><b>${row.doc}</b></td>
+        <td>${row.uni}</td>
+        <td>${row.req}</td>
+        <td>
+          <select class="hk-select" data-hk-doc-status="${index}">
+            ${["Not started","Requested","Draft","Waiting for school","Ready","Uploaded","Submitted"].map(x=>`<option ${x===(rowState.status||"Not started")?"selected":""}>${x}</option>`).join("")}
+          </select>
+        </td>
+        <td>${formatShortDate(row.start)}</td>
+        <td>${formatShortDate(row.mine)}</td>
+        <td>${row.official}</td>
+        <td class="${match?"vault-ready":"vault-pending"}">${vaultLabel}</td>
+        <td>${ready?"✅":"—"}</td>
+        <td><input class="hk-input" data-hk-doc-note="${index}" value="${rowState.note||""}" placeholder="Notes"></td>
+        <td>${match?`<button class="btn" onclick="openDocument(${match.id})">Open</button>`:"—"}</td>
+        <td>${match?`<button class="btn soft" onclick="downloadDocument(${match.id})">Download</button>`:"—"}</td>
+      </tr>
+    `;
+  }).join("");
+
+  body.querySelectorAll("[data-hk-doc-status]").forEach(el=>{
+    el.addEventListener("change",()=>{
+      const next=readLocal("hkDocumentTracker",{});
+      const i=el.dataset.hkDocStatus;
+      next[i]=next[i]||{};
+      next[i].status=el.value;
+      writeLocal("hkDocumentTracker",next);
+      renderHkTopSummary();
+    });
+  });
+
+  body.querySelectorAll("[data-hk-doc-note]").forEach(el=>{
+    el.addEventListener("input",()=>{
+      const next=readLocal("hkDocumentTracker",{});
+      const i=el.dataset.hkDocNote;
+      next[i]=next[i]||{};
+      next[i].note=el.value;
+      writeLocal("hkDocumentTracker",next);
+    });
+  });
+}
+
+function renderHkTimeline(){
+  const box=document.getElementById("hkPersonalTimeline");
+  if(!box) return;
+  const state=readLocal("hkPersonalTimelineState",{});
+
+  box.innerHTML=hkPersonalGroups
+    .slice()
+    .sort((a,b)=>a.date.localeCompare(b.date))
+    .map((group,gIndex)=>{
+      const cd=hkCountdownText(group.date);
+      return `
+        <div class="hk-timeline-group">
+          <div class="hk-timeline-head">
+            <b>${group.label}</b>
+            <span class="hk-countdown ${cd.overdue?"overdue":""}">${cd.text}</span>
+          </div>
+          <div class="hk-checklist">
+            ${group.tasks.map((task,tIndex)=>{
+              const key=gIndex+"-"+tIndex;
+              return `
+                <label class="hk-check ${state[key]?"done":""}">
+                  <input type="checkbox" data-hk-time="${key}" ${state[key]?"checked":""}>
+                  <span>${task}</span>
+                </label>
+              `;
+            }).join("")}
+          </div>
+        </div>
+      `;
+    }).join("");
+
+  box.querySelectorAll("[data-hk-time]").forEach(input=>{
+    input.addEventListener("change",()=>{
+      const next=readLocal("hkPersonalTimelineState",{});
+      next[input.dataset.hkTime]=input.checked;
+      writeLocal("hkPersonalTimelineState",next);
+      renderHkTimeline();
+      renderHkTopSummary();
+    });
+  });
+}
+
+function renderHkTopSummary(){
+  const state=readLocal("hkPersonalTimelineState",{});
+  const groups=hkPersonalGroups.slice().sort((a,b)=>a.date.localeCompare(b.date));
+  let nextAction="Review Hong Kong application plan";
+  let nextDoc="—";
+
+  outer:
+  for(const group of groups){
+    for(let i=0;i<group.tasks.length;i++){
+      const originalIndex=hkPersonalGroups.indexOf(group);
+      const key=originalIndex+"-"+i;
+      if(!state[key]){
+        nextAction=group.tasks[i];
+        nextDoc=formatShortDate(group.date)+" • "+hkCountdownText(group.date).text;
+        break outer;
+      }
+    }
+  }
+
+  document.getElementById("hkNextAction").textContent=nextAction;
+  document.getElementById("hkNextDocDeadline").textContent=nextDoc;
+
+  const uniDates=[
+    {label:"HKU target",date:"2026-11-15"},
+    {label:"HKU first round",date:"2026-11-25"},
+    {label:"CUHK target",date:"2026-12-15"},
+    {label:"CUHK Medicine",date:"2027-01-07"}
+  ].filter(x=>hkDaysLeft(x.date)>=0).sort((a,b)=>a.date.localeCompare(b.date));
+
+  document.getElementById("hkNextUniversityDeadline").textContent=
+    uniDates.length ? uniDates[0].label+" • "+formatShortDate(uniDates[0].date)+" • "+hkCountdownText(uniDates[0].date).text : "No upcoming deadline";
+
+  const docs=readLocal("hkDocumentTracker",{});
+  const isReady=x=>["Ready","Uploaded","Submitted"].includes(x?.status);
+  const hkuIndexes=hkDocRows.map((x,i)=>({x,i})).filter(o=>o.x.uni.includes("HKU"));
+  const cuhkIndexes=hkDocRows.map((x,i)=>({x,i})).filter(o=>o.x.uni.includes("CUHK"));
+  const hkuPct=Math.round(hkuIndexes.filter(o=>isReady(docs[o.i])).length/hkuIndexes.length*100)||0;
+  const cuhkPct=Math.round(cuhkIndexes.filter(o=>isReady(docs[o.i])).length/cuhkIndexes.length*100)||0;
+
+  document.getElementById("hkReadinessSummary").textContent="HKU "+hkuPct+"% • CUHK "+cuhkPct+"%";
+}
+
+function bindHkIelts(){
+  const fields=["hkIeltsBooked","hkIeltsStatus","hkIeltsDate","hkIeltsResultDate","hkIeltsOverall","hkIeltsListening","hkIeltsReading","hkIeltsWriting","hkIeltsSpeaking"];
+  fields.forEach(id=>{
+    const el=document.getElementById(id);
+    if(!el) return;
+    const saved=localStorage.getItem(id);
+    if(saved!==null) el.value=saved;
+    const handler=()=>{localStorage.setItem(id,el.value);renderHkIeltsResult();};
+    el.addEventListener("input",handler);
+    el.addEventListener("change",handler);
+  });
+  renderHkIeltsResult();
+}
+
+function renderHkIeltsResult(){
+  const o=Number(document.getElementById("hkIeltsOverall")?.value||0);
+  const w=Number(document.getElementById("hkIeltsWriting")?.value||0);
+  const s=Number(document.getElementById("hkIeltsSpeaking")?.value||0);
+  const hku=o>=6.5&&w>=6&&s>=6;
+  const cuhk=o>=6;
+  const box=document.getElementById("hkIeltsResult");
+  if(!box) return;
+  box.innerHTML="Meets HKU? <b>"+(hku?"Yes ✅":"Not yet / pending")+"</b> • Meets CUHK? <b>"+(cuhk?"Yes ✅":"Not yet / pending")+"</b><br>Pending IELTS does not automatically make the application impossible; later submission / conditional consideration depends on the programme.";
+}
+
+function bindHkUnt(){
+  ["hkUntStatus","hkUntExpectedDate","hkUntScore","hkUntPercentage"].forEach(id=>{
+    const el=document.getElementById(id);
+    if(!el) return;
+    const saved=localStorage.getItem(id);
+    if(saved!==null) el.value=saved;
+    const handler=()=>{localStorage.setItem(id,el.value);renderHkUntResult();};
+    el.addEventListener("input",handler); el.addEventListener("change",handler);
+  });
+  ["hkUntUploadedHku","hkUntUploadedCuhk"].forEach(id=>{
+    const el=document.getElementById(id);
+    if(!el) return;
+    el.checked=localStorage.getItem(id)==="true";
+    el.onchange=()=>localStorage.setItem(id,String(el.checked));
+  });
+  renderHkUntResult();
+}
+
+function renderHkUntResult(){
+  const p=Number(document.getElementById("hkUntPercentage")?.value||0);
+  const box=document.getElementById("hkUntResult");
+  if(!box) return;
+  box.innerHTML="HKU lower boundary 80%+: <b>"+(p>=80?"met ✅":"pending / not yet met")+"</b> • CUHK lower boundary 80%+: <b>"+(p>=80?"met ✅":"pending / not yet met")+"</b><br>SAT is not required for the Kazakhstan qualification route.";
+}
+
+function renderHkSchoolDocs(){
+  const box=document.getElementById("hkSchoolDocs");
+  if(!box) return;
+  const state=readLocal("hkSchoolDocsState",{});
+
+  box.innerHTML=hkSchoolDocItems.map((item,index)=>{
+    const s=state[index]||{};
+    return `
+      <div class="hk-check">
+        <div style="width:100%">
+          <div class="task-name"><b>${item}</b></div>
+          <div class="hk-form-grid">
+            <input class="hk-input" type="date" data-school-field="${index}:requested" value="${s.requested||""}" title="Requested date">
+            <input class="hk-input" type="date" data-school-field="${index}:expected" value="${s.expected||""}" title="Expected date">
+            <input class="hk-input" type="date" data-school-field="${index}:received" value="${s.received||""}" title="Received date">
+            <label><input type="checkbox" data-school-check="${index}" ${s.uploaded?"checked":""}> Uploaded</label>
+            <input class="hk-input full" data-school-field="${index}:notes" value="${s.notes||""}" placeholder="Notes">
+          </div>
+        </div>
+      </div>
+    `;
+  }).join("");
+
+  box.querySelectorAll("[data-school-field]").forEach(el=>{
+    el.addEventListener("input",()=>{
+      const [i,field]=el.dataset.schoolField.split(":");
+      const next=readLocal("hkSchoolDocsState",{});
+      next[i]=next[i]||{};
+      next[i][field]=el.value;
+      writeLocal("hkSchoolDocsState",next);
+    });
+  });
+  box.querySelectorAll("[data-school-check]").forEach(el=>{
+    el.addEventListener("change",()=>{
+      const i=el.dataset.schoolCheck;
+      const next=readLocal("hkSchoolDocsState",{});
+      next[i]=next[i]||{};
+      next[i].uploaded=el.checked;
+      writeLocal("hkSchoolDocsState",next);
+    });
+  });
+}
+
+function renderHkPortfolio(){
+  const box=document.getElementById("hkPortfolioChecklist");
+  if(!box) return;
+  const state=readLocal("hkPortfolioState",{});
+  const choices=["Include in HKU","Include in CUHK","Scholarship only","Do not submit"];
+
+  box.innerHTML=hkPortfolioItems.map((item,index)=>`
+    <div class="tracker-task">
+      <div class="task-name">${item}</div>
+      <select class="hk-select" data-portfolio="${index}">
+        ${choices.map(x=>`<option ${x===(state[index]||"Include in HKU")?"selected":""}>${x}</option>`).join("")}
+      </select>
+      <span></span>
+    </div>
+  `).join("");
+
+  box.querySelectorAll("[data-portfolio]").forEach(el=>{
+    el.onchange=()=>{
+      const next=readLocal("hkPortfolioState",{});
+      next[el.dataset.portfolio]=el.value;
+      writeLocal("hkPortfolioState",next);
+    };
+  });
+}
+
+function renderHkReferees(){
+  const body=document.getElementById("hkRefereeTable");
+  if(!body) return;
+  const state=readLocal("hkReferees",Array.from({length:3},()=>({})));
+
+  body.innerHTML=state.map((r,index)=>`
+    <tr>
+      <td><input class="hk-input" data-ref="${index}:name" value="${r.name||""}" placeholder="Name"></td>
+      <td><input class="hk-input" data-ref="${index}:role" value="${r.role||""}" placeholder="Subject / role"></td>
+      <td><select class="hk-select" data-ref="${index}:university"><option>HKU + CUHK</option><option>HKU</option><option>CUHK</option></select></td>
+      <td><input type="checkbox" data-ref-check="${index}:asked" ${r.asked?"checked":""}></td>
+      <td><input type="checkbox" data-ref-check="${index}:agreed" ${r.agreed?"checked":""}></td>
+      <td><input class="hk-input" type="date" data-ref="${index}:deadline" value="${r.deadline||""}"></td>
+      <td><input type="checkbox" data-ref-check="${index}:invite" ${r.invite?"checked":""}></td>
+      <td><input type="checkbox" data-ref-check="${index}:submitted" ${r.submitted?"checked":""}></td>
+      <td><input type="checkbox" data-ref-check="${index}:thanks" ${r.thanks?"checked":""}></td>
+    </tr>
+  `).join("");
+
+  body.querySelectorAll("[data-ref]").forEach(el=>{
+    const [i,field]=el.dataset.ref.split(":");
+    if(field==="university" && state[i]?.university) el.value=state[i].university;
+    el.oninput=el.onchange=()=>{
+      const next=readLocal("hkReferees",Array.from({length:3},()=>({})));
+      next[i]=next[i]||{};
+      next[i][field]=el.value;
+      writeLocal("hkReferees",next);
+    };
+  });
+
+  body.querySelectorAll("[data-ref-check]").forEach(el=>{
+    el.onchange=()=>{
+      const [i,field]=el.dataset.refCheck.split(":");
+      const next=readLocal("hkReferees",Array.from({length:3},()=>({})));
+      next[i]=next[i]||{};
+      next[i][field]=el.checked;
+      writeLocal("hkReferees",next);
+    };
+  });
+}
+
+function injectHongKongIntoToday(){
+  if(!Array.isArray(deadlineItems)) return;
+  const exists=deadlineItems.some(x=>x.university==="HKU MBBS");
+  if(!exists){
+    deadlineItems.push(
+      {university:"HKU MBBS",action:"Personal submission target",deadline:"2026-11-15"},
+      {university:"HKU MBBS",action:"Official first-round deadline",deadline:"2026-11-25"},
+      {university:"CUHK MBChB",action:"Personal submission target",deadline:"2026-12-15"},
+      {university:"CUHK MBChB",action:"Official Medicine deadline",deadline:"2027-01-07"}
+    );
+  }
+}
+
+async function refreshHongKongTracker(){
+  renderHkCountdowns();
+  renderSimpleChecklist("hkuInterviewChecklist","hkuInterviewChecklistState",hkuInterviewItems);
+  renderSimpleChecklist("hkuScholarshipChecklist","hkuScholarshipChecklistState",hkuScholarshipItems);
+  renderSimpleChecklist("cuhkScholarshipChecklist","cuhkScholarshipChecklistState",cuhkScholarshipItems);
+  bindHkSelect("hkuInterviewStatus","hkuInterviewStatus","Not started");
+  renderHkPipeline();
+  renderHkTimeline();
+  bindHkIelts();
+  bindHkUnt();
+  renderHkSchoolDocs();
+  renderHkPortfolio();
+  renderHkReferees();
+  injectHongKongIntoToday();
+  await renderHkDocumentTable();
+  renderHkTopSummary();
+  renderDeadlines();
+}
+
+refreshHongKongTracker();
 
 
 /* KAZAKHSTAN TRACKER */
