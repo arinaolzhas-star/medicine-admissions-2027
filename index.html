@@ -2230,7 +2230,14 @@ Valid until: ${doc.expiry}
 </div>
 
 
-<div>
+<div class="actions">
+
+<button
+class="btn soft"
+onclick="downloadDocument(${doc.id})"
+>
+Скачать
+</button>
 
 <button
 class="btn"
@@ -2247,6 +2254,68 @@ onclick="removeDocument(${doc.id})"
 
 }
 
+
+
+window.downloadDocument=
+async function(id){
+
+const database=
+await openDatabase();
+
+const documentData=
+await new Promise(
+(resolve,reject)=>{
+
+const request=
+database
+.transaction(STORE_NAME)
+.objectStore(STORE_NAME)
+.get(id);
+
+request.onsuccess=
+()=>resolve(request.result);
+
+request.onerror=
+()=>reject(request.error);
+
+}
+);
+
+if(!documentData || !documentData.file){
+
+alert("Файл не найден в локальном хранилище.");
+
+return;
+
+}
+
+const url=
+URL.createObjectURL(documentData.file);
+
+const link=
+document.createElement("a");
+
+link.href=url;
+
+link.download=
+documentData.fileName
+||
+documentData.label
+||
+"document";
+
+document.body.appendChild(link);
+
+link.click();
+
+link.remove();
+
+setTimeout(
+()=>URL.revokeObjectURL(url),
+1000
+);
+
+};
 
 
 window.removeDocument=
