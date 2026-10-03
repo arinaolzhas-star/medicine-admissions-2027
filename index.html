@@ -433,6 +433,332 @@ ol{
   margin:0 0 6px;
 }
 
+/* TODAY / TRACKER */
+
+.today-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:18px;
+  margin:4px 0 20px;
+}
+
+.today-date{
+  font-size:30px;
+  font-weight:800;
+  letter-spacing:-.02em;
+}
+
+.today-goal{
+  margin-top:6px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.today-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);
+  gap:17px;
+  margin-bottom:17px;
+}
+
+.today-card{
+  background:white;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:20px;
+  min-width:0;
+}
+
+.today-card h4{
+  margin:0 0 6px;
+  font-size:16px;
+}
+
+.today-card-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:14px;
+}
+
+.today-kicker{
+  color:var(--muted);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.priority-list{
+  display:grid;
+  gap:8px;
+  margin-top:12px;
+}
+
+.priority-row{
+  display:grid;
+  grid-template-columns:28px 1fr;
+  gap:8px;
+  align-items:center;
+}
+
+.priority-number{
+  width:28px;
+  height:28px;
+  display:grid;
+  place-items:center;
+  border-radius:9px;
+  background:var(--primarySoft);
+  color:var(--primary);
+  font-size:11px;
+  font-weight:800;
+}
+
+.priority-input{
+  width:100%;
+  border:1px solid var(--line);
+  border-radius:11px;
+  padding:10px 12px;
+  background:#fbfcff;
+  color:var(--text);
+}
+
+.daily-form{
+  display:grid;
+  grid-template-columns:minmax(120px,.45fr) minmax(180px,1fr) auto;
+  gap:9px;
+  margin:14px 0;
+}
+
+.goal-line{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items:center;
+  margin-top:8px;
+  font-size:13px;
+}
+
+.goal-line b{
+  font-size:14px;
+}
+
+.today-progress{
+  height:11px;
+  background:#edf0f5;
+  border-radius:999px;
+  overflow:hidden;
+  margin:9px 0 6px;
+}
+
+.today-progress div{
+  height:100%;
+  width:0;
+  background:linear-gradient(90deg,#4968f5,#8493ff);
+  transition:width .2s ease;
+}
+
+.today-progress.completed div{
+  background:linear-gradient(90deg,#16865a,#3fb982);
+}
+
+.completed-text{
+  color:var(--green);
+  font-size:12px;
+  font-weight:800;
+  margin-top:7px;
+}
+
+.pending-text{
+  color:var(--amber);
+  font-size:12px;
+  font-weight:700;
+  margin-top:7px;
+}
+
+.streak-grid,
+.weekly-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:9px;
+}
+
+.streak-box,
+.summary-box{
+  border:1px solid var(--line);
+  border-radius:13px;
+  padding:13px;
+  background:#fbfcff;
+}
+
+.streak-box b,
+.summary-box b{
+  display:block;
+  font-size:22px;
+  margin-top:3px;
+}
+
+.streak-box span,
+.summary-box span{
+  color:var(--muted);
+  font-size:10px;
+}
+
+.weekly-grid{
+  grid-template-columns:repeat(4,1fr);
+  margin-bottom:17px;
+}
+
+.daily-task-list,
+.application-task-list{
+  display:grid;
+  gap:7px;
+  margin-top:12px;
+}
+
+.tracker-task{
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr) auto;
+  align-items:center;
+  gap:9px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:10px 11px;
+  background:#fff;
+}
+
+.tracker-task.done .task-name{
+  color:var(--muted);
+  text-decoration:line-through;
+}
+
+.tracker-task input[type="checkbox"]{
+  width:16px;
+  height:16px;
+  accent-color:var(--green);
+}
+
+.task-name{
+  font-size:12px;
+  line-height:1.35;
+}
+
+.task-meta{
+  color:var(--muted);
+  font-size:10px;
+  margin-top:2px;
+}
+
+.vault-ready{
+  color:var(--green);
+  font-weight:700;
+}
+
+.vault-pending{
+  color:var(--amber);
+  font-weight:700;
+}
+
+.icon-btn{
+  border:0;
+  background:transparent;
+  color:var(--muted);
+  cursor:pointer;
+  padding:4px 6px;
+  border-radius:7px;
+}
+
+.icon-btn:hover{
+  background:#f1f3f8;
+}
+
+.add-task-row{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:8px;
+  margin-top:10px;
+}
+
+.tracker-table-wrap{
+  width:100%;
+  overflow:auto;
+}
+
+.tracker-table{
+  width:100%;
+  border-collapse:collapse;
+  min-width:620px;
+}
+
+.tracker-table th,
+.tracker-table td{
+  text-align:left;
+  padding:11px 10px;
+  border-bottom:1px solid var(--line);
+  font-size:11px;
+  vertical-align:middle;
+}
+
+.tracker-table th{
+  color:var(--muted);
+  font-weight:700;
+}
+
+.status-select{
+  border:1px solid var(--line);
+  background:white;
+  border-radius:9px;
+  padding:7px 9px;
+  color:var(--text);
+  font-size:11px;
+}
+
+.status-pill{
+  display:inline-flex;
+  align-items:center;
+  border-radius:999px;
+  padding:5px 8px;
+  font-size:10px;
+  font-weight:800;
+}
+
+.status-complete{
+  background:var(--greenSoft);
+  color:var(--green);
+}
+
+.status-pending{
+  background:var(--amberSoft);
+  color:var(--amber);
+}
+
+.status-overdue{
+  background:#fff0f0;
+  color:#c43c3c;
+}
+
+.today-section-block{
+  margin-bottom:17px;
+}
+
+.history-empty{
+  color:var(--muted);
+  font-size:12px;
+  padding:8px 0;
+}
+
+@media(max-width:1100px){
+  .today-grid{
+    grid-template-columns:1fr;
+  }
+
+  .weekly-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
 /* VAULT */
 
 .vault-layout{
@@ -678,6 +1004,32 @@ footer{
     flex:1;
   }
 
+  .today-header{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .today-date{
+    font-size:25px;
+  }
+
+  .daily-form{
+    grid-template-columns:1fr;
+  }
+
+  .weekly-grid,
+  .streak-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .today-card{
+    padding:16px;
+  }
+
+  .tracker-task{
+    grid-template-columns:auto minmax(0,1fr) auto;
+  }
+
   .upload-grid{
     grid-template-columns:1fr;
   }
@@ -759,6 +1111,10 @@ footer{
     Обзор
   </button>
 
+  <button class="tab" data-tab="today">
+    ✅ Today
+  </button>
+
   <button class="tab" data-tab="china">
     🇨🇳 Китай
   </button>
@@ -838,6 +1194,174 @@ footer{
       </div>
     </div>
 
+  </div>
+
+</section>
+
+
+
+<!-- TODAY / TRACKER -->
+
+<section id="today" class="section">
+
+  <div class="today-header">
+    <div>
+      <div id="todayDate" class="today-date"></div>
+      <div class="today-goal">Today’s goal: Stay consistent. Minimum 60 minutes.</div>
+    </div>
+  </div>
+
+  <div class="today-card today-section-block">
+    <div class="today-card-head">
+      <div>
+        <div class="today-kicker">Today’s priorities</div>
+        <h4>Top 3 tasks</h4>
+      </div>
+      <div class="muted">Редактируются автоматически и сохраняются локально</div>
+    </div>
+
+    <div class="priority-list">
+      <div class="priority-row">
+        <div class="priority-number">1</div>
+        <input id="priority1" class="priority-input" placeholder="Главная задача №1">
+      </div>
+      <div class="priority-row">
+        <div class="priority-number">2</div>
+        <input id="priority2" class="priority-input" placeholder="Главная задача №2">
+      </div>
+      <div class="priority-row">
+        <div class="priority-number">3</div>
+        <input id="priority3" class="priority-input" placeholder="Главная задача №3">
+      </div>
+    </div>
+  </div>
+
+  <div id="weeklySummary" class="weekly-grid">
+    <div class="summary-box"><span>Preparation this week</span><b id="weekHours">0 h</b></div>
+    <div class="summary-box"><span>Days goal completed</span><b id="weekGoalDays">0/7</b></div>
+    <div class="summary-box"><span>Applications submitted</span><b id="submittedCount">0</b></div>
+    <div class="summary-box"><span>Documents ready</span><b id="readyDocuments">0</b></div>
+  </div>
+
+  <div class="today-grid">
+
+    <div class="today-card">
+      <div class="today-card-head">
+        <div>
+          <div class="today-kicker">Daily preparation tracker</div>
+          <h4>60 minutes preparation per day</h4>
+        </div>
+        <div id="todayMinutesLabel" class="muted">Today: 0 / 60 min</div>
+      </div>
+
+      <div id="todayProgress" class="today-progress"><div id="todayProgressBar"></div></div>
+      <div id="goalStatus" class="pending-text">60 minutes remaining</div>
+
+      <div class="daily-form">
+        <input id="studyMinutes" class="field" type="number" min="1" step="1" placeholder="Minutes">
+        <select id="studyCategory" class="field">
+          <option>IELTS</option>
+          <option>CSCA Math</option>
+          <option>CSCA Chemistry</option>
+          <option>CSCA Physics</option>
+          <option>University Research</option>
+          <option>Applications</option>
+          <option>Documents</option>
+          <option>Other</option>
+        </select>
+        <button id="addStudySession" class="btn primary">+ Add study session</button>
+      </div>
+
+      <div id="todaySessions" class="vault-note"></div>
+    </div>
+
+    <div class="today-card">
+      <div class="today-card-head">
+        <div>
+          <div class="today-kicker">Streak</div>
+          <h4>Consistency</h4>
+        </div>
+      </div>
+
+      <div class="streak-grid">
+        <div class="streak-box">
+          <span>Current streak</span>
+          <b id="currentStreak">0 days</b>
+        </div>
+        <div class="streak-box">
+          <span>This week</span>
+          <b id="thisWeekCompleted">0 / 7</b>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="today-grid">
+
+    <div class="today-card">
+      <div class="today-card-head">
+        <div>
+          <div class="today-kicker">Daily checklist</div>
+          <h4>Today’s tasks</h4>
+        </div>
+      </div>
+
+      <div id="dailyTaskList" class="daily-task-list"></div>
+
+      <div class="add-task-row">
+        <input id="newDailyTask" class="field" placeholder="Добавить свою задачу">
+        <button id="addDailyTask" class="btn soft">+ Add task</button>
+      </div>
+    </div>
+
+    <div class="today-card">
+      <div class="today-card-head">
+        <div>
+          <div class="today-kicker">Study history</div>
+          <h4>Recent preparation</h4>
+        </div>
+      </div>
+      <div id="studyHistory"></div>
+    </div>
+
+  </div>
+
+  <div class="today-card today-section-block">
+    <div class="today-card-head">
+      <div>
+        <div class="today-kicker">Upcoming deadlines</div>
+        <h4>University actions</h4>
+      </div>
+      <div class="muted">Неизвестные даты не подставляются</div>
+    </div>
+
+    <div class="tracker-table-wrap">
+      <table class="tracker-table">
+        <thead>
+          <tr>
+            <th>University</th>
+            <th>Action</th>
+            <th>Deadline</th>
+            <th>Days left</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="deadlineTable"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="today-card">
+    <div class="today-card-head">
+      <div>
+        <div class="today-kicker">Application tasks</div>
+        <h4>Admissions document checklist</h4>
+      </div>
+      <div class="muted">Vault status показывается рядом с документами</div>
+    </div>
+
+    <div id="applicationTaskList" class="application-task-list"></div>
   </div>
 
 </section>
@@ -2484,6 +3008,10 @@ await deleteDocument(id);
 
 renderDocuments();
 
+if(typeof refreshTodayTracker==="function"){
+  refreshTodayTracker();
+}
+
 }
 
 };
@@ -2621,11 +3149,574 @@ document
 
 renderDocuments();
 
+if(typeof refreshTodayTracker==="function"){
+  refreshTodayTracker();
+}
+
 }
 );
 
 
 renderDocuments();
+
+
+/* TODAY / TRACKER */
+
+const DAILY_GOAL_MINUTES=60;
+
+const defaultDailyTasks=[
+  "Complete 60 minutes of preparation",
+  "Check current application priorities",
+  "Work on one admissions document",
+  "Review university / scholarship updates"
+];
+
+const applicationTaskItems=[
+  "IELTS",
+  "CSCA",
+  "Passport",
+  "School Transcript",
+  "Expected Graduation Certificate",
+  "CV",
+  "Personal Statement",
+  "Recommendation Letter 1",
+  "Recommendation Letter 2",
+  "Portfolio",
+  "Certificates & Awards",
+  "Police Clearance",
+  "Medical Examination",
+  "Bank Statement",
+  "Notarized Translations"
+];
+
+const deadlineItems=[
+  {
+    university:"Xinjiang Medical University",
+    action:"Watch for the official 2027 application and scholarship opening",
+    deadline:null
+  },
+  {
+    university:"Shanghai Jiao Tong University School of Medicine",
+    action:"Confirm 2027 full scholarship before paying the application fee",
+    deadline:null
+  },
+  {
+    university:"Shandong University",
+    action:"Wait for the official 2027 MBBS guide and scholarship details",
+    deadline:null
+  },
+  {
+    university:"Huazhong University of Science and Technology (HUST)",
+    action:"Verify 2027 MBBS requirements and full scholarship eligibility",
+    deadline:null
+  }
+];
+
+function localDateKey(date=new Date()){
+  const year=date.getFullYear();
+  const month=String(date.getMonth()+1).padStart(2,"0");
+  const day=String(date.getDate()).padStart(2,"0");
+  return year+"-"+month+"-"+day;
+}
+
+function dateFromKey(key){
+  const parts=key.split("-").map(Number);
+  return new Date(parts[0],parts[1]-1,parts[2]);
+}
+
+function formatTrackerDate(date){
+  return new Intl.DateTimeFormat(
+    "en-GB",
+    {weekday:"long",day:"2-digit",month:"short",year:"numeric"}
+  ).format(date);
+}
+
+function formatShortDate(key){
+  return new Intl.DateTimeFormat(
+    "en-GB",
+    {day:"2-digit",month:"short"}
+  ).format(dateFromKey(key));
+}
+
+function readLocal(key,fallback){
+  try{
+    const value=localStorage.getItem(key);
+    return value?JSON.parse(value):fallback;
+  }catch(error){
+    return fallback;
+  }
+}
+
+function writeLocal(key,value){
+  localStorage.setItem(key,JSON.stringify(value));
+}
+
+function getSessionsState(){
+  return readLocal("medicineDailySessions",{});
+}
+
+function getMinutesForDate(key){
+  const sessions=getSessionsState()[key]||[];
+  return sessions.reduce((sum,session)=>sum+Number(session.minutes||0),0);
+}
+
+function getWeekKeys(reference=new Date()){
+  const date=new Date(reference.getFullYear(),reference.getMonth(),reference.getDate());
+  const day=(date.getDay()+6)%7;
+  const monday=new Date(date);
+  monday.setDate(date.getDate()-day);
+
+  return Array.from({length:7},(_,index)=>{
+    const d=new Date(monday);
+    d.setDate(monday.getDate()+index);
+    return localDateKey(d);
+  });
+}
+
+function ensureDailyTasks(){
+  const allTasks=readLocal("medicineDailyTasks",{});
+  const key=localDateKey();
+
+  if(!Array.isArray(allTasks[key])){
+    allTasks[key]=defaultDailyTasks.map((text,index)=>({
+      id:"default-"+index,
+      text,
+      done:false
+    }));
+    writeLocal("medicineDailyTasks",allTasks);
+  }
+
+  return allTasks;
+}
+
+function renderTodayHeader(){
+  document.getElementById("todayDate").textContent=
+    formatTrackerDate(new Date());
+}
+
+function renderPriorities(){
+  const priorities=readLocal("medicinePriorities",["","",""]);
+
+  [1,2,3].forEach((number,index)=>{
+    const input=document.getElementById("priority"+number);
+    input.value=priorities[index]||"";
+
+    input.oninput=()=>{
+      const next=readLocal("medicinePriorities",["","",""]);
+      next[index]=input.value;
+      writeLocal("medicinePriorities",next);
+    };
+  });
+}
+
+function renderStudyTracker(){
+  const key=localDateKey();
+  const sessions=getSessionsState()[key]||[];
+  const minutes=sessions.reduce((sum,session)=>sum+Number(session.minutes||0),0);
+  const percent=Math.min(100,minutes/DAILY_GOAL_MINUTES*100);
+  const completed=minutes>=DAILY_GOAL_MINUTES;
+
+  document.getElementById("todayMinutesLabel").textContent=
+    "Today: "+minutes+" / "+DAILY_GOAL_MINUTES+" min";
+
+  document.getElementById("todayProgressBar").style.width=percent+"%";
+
+  document.getElementById("todayProgress")
+    .classList.toggle("completed",completed);
+
+  const status=document.getElementById("goalStatus");
+
+  if(completed){
+    status.className="completed-text";
+    status.textContent="Daily goal completed ✅";
+  }else{
+    status.className="pending-text";
+    status.textContent=(DAILY_GOAL_MINUTES-minutes)+" minutes remaining";
+  }
+
+  document.getElementById("todaySessions").textContent=
+    sessions.length
+      ? sessions.map(session=>session.category+" · "+session.minutes+" min").join("  •  ")
+      : "No study sessions added yet.";
+
+  const taskState=ensureDailyTasks();
+
+  if(minutes>=DAILY_GOAL_MINUTES && taskState[key] && taskState[key][0]){
+    taskState[key][0].done=true;
+    writeLocal("medicineDailyTasks",taskState);
+  }
+}
+
+function renderDailyTasks(){
+  const key=localDateKey();
+  const allTasks=ensureDailyTasks();
+  const tasks=allTasks[key];
+  const minutes=getMinutesForDate(key);
+
+  if(minutes>=DAILY_GOAL_MINUTES && tasks[0]){
+    tasks[0].done=true;
+    writeLocal("medicineDailyTasks",allTasks);
+  }
+
+  document.getElementById("dailyTaskList").innerHTML=
+    tasks.map(task=>`
+      <div class="tracker-task ${task.done?"done":""}">
+        <input
+          type="checkbox"
+          ${task.done?"checked":""}
+          onchange="toggleDailyTask('${task.id}')"
+          ${task.id==="default-0" && minutes>=DAILY_GOAL_MINUTES?"disabled":""}
+        >
+        <div class="task-name">${task.text}</div>
+        <button class="icon-btn" onclick="deleteDailyTask('${task.id}')" title="Удалить">×</button>
+      </div>
+    `).join("");
+}
+
+window.toggleDailyTask=function(id){
+  const key=localDateKey();
+  const allTasks=ensureDailyTasks();
+  const task=allTasks[key].find(item=>item.id===id);
+
+  if(task){
+    task.done=!task.done;
+    writeLocal("medicineDailyTasks",allTasks);
+    renderDailyTasks();
+  }
+};
+
+window.deleteDailyTask=function(id){
+  const key=localDateKey();
+  const allTasks=ensureDailyTasks();
+  allTasks[key]=allTasks[key].filter(item=>item.id!==id);
+  writeLocal("medicineDailyTasks",allTasks);
+  renderDailyTasks();
+};
+
+function addDailyTask(){
+  const input=document.getElementById("newDailyTask");
+  const text=input.value.trim();
+
+  if(!text) return;
+
+  const key=localDateKey();
+  const allTasks=ensureDailyTasks();
+
+  allTasks[key].push({
+    id:"custom-"+Date.now(),
+    text,
+    done:false
+  });
+
+  writeLocal("medicineDailyTasks",allTasks);
+  input.value="";
+  renderDailyTasks();
+}
+
+function addStudySession(){
+  const input=document.getElementById("studyMinutes");
+  const minutes=Number(input.value);
+  const category=document.getElementById("studyCategory").value;
+
+  if(!Number.isFinite(minutes) || minutes<=0){
+    alert("Введите количество минут больше 0.");
+    return;
+  }
+
+  const key=localDateKey();
+  const state=getSessionsState();
+
+  if(!Array.isArray(state[key])){
+    state[key]=[];
+  }
+
+  state[key].push({
+    minutes:Math.round(minutes),
+    category,
+    added:new Date().toISOString()
+  });
+
+  writeLocal("medicineDailySessions",state);
+  input.value="";
+  refreshTodayTracker();
+}
+
+function renderStudyHistory(){
+  const state=getSessionsState();
+  const keys=Object.keys(state)
+    .filter(key=>Array.isArray(state[key]) && state[key].length)
+    .sort((a,b)=>b.localeCompare(a))
+    .slice(0,14);
+
+  const box=document.getElementById("studyHistory");
+
+  if(!keys.length){
+    box.innerHTML='<div class="history-empty">History will appear after your first study session.</div>';
+    return;
+  }
+
+  box.innerHTML=`
+    <div class="tracker-table-wrap">
+      <table class="tracker-table" style="min-width:0">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Minutes</th>
+            <th>Goal completed</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${keys.map(key=>{
+            const minutes=getMinutesForDate(key);
+            const completed=minutes>=DAILY_GOAL_MINUTES;
+            return `
+              <tr>
+                <td>${formatShortDate(key)}</td>
+                <td>${minutes} min</td>
+                <td><span class="status-pill ${completed?"status-complete":"status-pending"}">${completed?"✅ Completed":"Pending"}</span></td>
+              </tr>
+            `;
+          }).join("")}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+function completedDateKeys(){
+  const state=getSessionsState();
+
+  return Object.keys(state)
+    .filter(key=>getMinutesForDate(key)>=DAILY_GOAL_MINUTES);
+}
+
+function calculateCurrentStreak(){
+  const completed=new Set(completedDateKeys());
+  let cursor=new Date();
+  let key=localDateKey(cursor);
+
+  if(!completed.has(key)){
+    cursor.setDate(cursor.getDate()-1);
+  }
+
+  let streak=0;
+
+  while(completed.has(localDateKey(cursor))){
+    streak++;
+    cursor.setDate(cursor.getDate()-1);
+  }
+
+  return streak;
+}
+
+function renderStreak(){
+  const weekKeys=getWeekKeys();
+  const weekCompleted=weekKeys.filter(key=>getMinutesForDate(key)>=DAILY_GOAL_MINUTES).length;
+  const streak=calculateCurrentStreak();
+
+  document.getElementById("currentStreak").textContent=
+    streak+" day"+(streak===1?"":"s");
+
+  document.getElementById("thisWeekCompleted").textContent=
+    weekCompleted+" / 7";
+}
+
+function getDeadlineStatuses(){
+  return readLocal("medicineDeadlineStatuses",{});
+}
+
+function deadlineDisplay(item){
+  if(!item.deadline){
+    return {
+      text:"Official 2027 deadline not announced",
+      days:"—",
+      overdue:false
+    };
+  }
+
+  const deadline=dateFromKey(item.deadline);
+  const today=dateFromKey(localDateKey());
+  const diff=Math.ceil((deadline-today)/86400000);
+
+  return {
+    text:formatShortDate(item.deadline),
+    days:diff<0?"Overdue":String(diff),
+    overdue:diff<0
+  };
+}
+
+function renderDeadlines(){
+  const statuses=getDeadlineStatuses();
+  const options=["Not open","Open","Submitted","Waiting","Accepted","Rejected"];
+
+  document.getElementById("deadlineTable").innerHTML=
+    deadlineItems.map((item,index)=>{
+      const display=deadlineDisplay(item);
+      const selected=statuses[item.university]||"Not open";
+
+      return `
+        <tr>
+          <td><b>${item.university}</b></td>
+          <td>${item.action}</td>
+          <td>${display.text}</td>
+          <td>${display.overdue?'<span class="status-pill status-overdue">Overdue</span>':display.days}</td>
+          <td>
+            <select class="status-select" onchange="setDeadlineStatus(${index},this.value)">
+              ${options.map(option=>`<option ${option===selected?"selected":""}>${option}</option>`).join("")}
+            </select>
+          </td>
+        </tr>
+      `;
+    }).join("");
+}
+
+window.setDeadlineStatus=function(index,status){
+  const state=getDeadlineStatuses();
+  state[deadlineItems[index].university]=status;
+  writeLocal("medicineDeadlineStatuses",state);
+  renderWeeklySummary();
+};
+
+function normalizeDocumentText(value){
+  return String(value||"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
+}
+
+function vaultStatusForTask(task,documents){
+  const aliases={
+    "IELTS":["ielts"],
+    "CSCA":["csca"],
+    "Passport":["passport"],
+    "School Transcript":["school transcript","transcript"],
+    "Expected Graduation Certificate":["expected graduation","graduation certificate"],
+    "CV":["cv","curriculum vitae"],
+    "Personal Statement":["personal statement"],
+    "Recommendation Letter 1":["recommendation letter 1","recommendation 1","recommendation letter"],
+    "Recommendation Letter 2":["recommendation letter 2","recommendation 2","recommendation letter"],
+    "Portfolio":["portfolio"],
+    "Certificates & Awards":["certificates awards","certificate","award"],
+    "Police Clearance":["police clearance"],
+    "Medical Examination":["medical examination","medical exam"],
+    "Bank Statement":["bank statement","financial statement"],
+    "Notarized Translations":["notarized translations","notarized translation","translation"]
+  };
+
+  const terms=aliases[task]||[task];
+  const matches=documents.filter(doc=>{
+    const haystack=normalizeDocumentText((doc.label||"")+" "+(doc.fileName||""));
+    return terms.some(term=>haystack.includes(normalizeDocumentText(term)));
+  });
+
+  if(!matches.length){
+    return {label:"Not uploaded",className:"vault-pending"};
+  }
+
+  if(matches.some(doc=>doc.status==="ready")){
+    return {label:"Vault: Ready",className:"vault-ready"};
+  }
+
+  if(matches.some(doc=>doc.status==="draft")){
+    return {label:"Vault: Draft",className:"vault-pending"};
+  }
+
+  return {label:"Vault: Need to prepare",className:"vault-pending"};
+}
+
+async function renderApplicationTasks(){
+  const state=readLocal("medicineApplicationTasks",{});
+  let documents=[];
+
+  try{
+    documents=await getDocuments();
+  }catch(error){
+    documents=[];
+  }
+
+  document.getElementById("applicationTaskList").innerHTML=
+    applicationTaskItems.map((item,index)=>{
+      const vault=vaultStatusForTask(item,documents);
+      const done=Boolean(state[index]);
+
+      return `
+        <label class="tracker-task ${done?"done":""}">
+          <input
+            type="checkbox"
+            data-app-index="${index}"
+            ${done?"checked":""}
+          >
+          <div>
+            <div class="task-name">${item}</div>
+            <div class="task-meta ${vault.className}">${vault.label}</div>
+          </div>
+          <span></span>
+        </label>
+      `;
+    }).join("");
+
+  document.querySelectorAll("[data-app-index]").forEach(input=>{
+    input.addEventListener("change",()=>{
+      const next=readLocal("medicineApplicationTasks",{});
+      next[input.dataset.appIndex]=input.checked;
+      writeLocal("medicineApplicationTasks",next);
+      renderApplicationTasks();
+    });
+  });
+}
+
+async function renderWeeklySummary(){
+  const weekKeys=getWeekKeys();
+  const totalMinutes=weekKeys.reduce((sum,key)=>sum+getMinutesForDate(key),0);
+  const completedDays=weekKeys.filter(key=>getMinutesForDate(key)>=DAILY_GOAL_MINUTES).length;
+  const statuses=getDeadlineStatuses();
+  const submitted=Object.values(statuses).filter(status=>status==="Submitted").length;
+
+  let readyDocumentsCount=0;
+
+  try{
+    const documents=await getDocuments();
+    readyDocumentsCount=documents.filter(doc=>doc.status==="ready").length;
+  }catch(error){
+    readyDocumentsCount=0;
+  }
+
+  const hours=Math.round(totalMinutes/6)/10;
+
+  document.getElementById("weekHours").textContent=hours+" h";
+  document.getElementById("weekGoalDays").textContent=completedDays+"/7";
+  document.getElementById("submittedCount").textContent=submitted;
+  document.getElementById("readyDocuments").textContent=readyDocumentsCount;
+}
+
+async function refreshTodayTracker(){
+  renderTodayHeader();
+  renderPriorities();
+  renderStudyTracker();
+  renderDailyTasks();
+  renderStudyHistory();
+  renderStreak();
+  renderDeadlines();
+  await Promise.all([
+    renderApplicationTasks(),
+    renderWeeklySummary()
+  ]);
+}
+
+document
+.getElementById("addStudySession")
+.addEventListener("click",addStudySession);
+
+document
+.getElementById("addDailyTask")
+.addEventListener("click",addDailyTask);
+
+document
+.getElementById("newDailyTask")
+.addEventListener("keydown",event=>{
+  if(event.key==="Enter"){
+    addDailyTask();
+  }
+});
+
+refreshTodayTracker();
 
 </script>
 
