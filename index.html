@@ -1655,8 +1655,8 @@ footer{
   </div>
 
   <div class="update-status">
-    <div><b>Last checked:</b> 18 Oct 2026, 09:35</div>
-    <div><b>Last data change:</b> 17 Oct 2026, 09:38</div>
+    <div><b>Last checked:</b> 21 Oct 2026, 09:38</div>
+    <div><b>Last data change:</b> 21 Oct 2026, 09:38</div>
   </div>
 
 </div>
@@ -2241,8 +2241,8 @@ footer{
       <div class="today-kicker">HKU scholarships</div>
       <h4>Funding tracker</h4>
       <div class="hk-detail"><span>HKU Entrance Scholarship</span>Automatic consideration after admission application. Selection is merit-based with academic and non-academic achievements. Packages can reach full tuition plus accommodation and general living allowance, but the exact 2027 award is not guaranteed.</div>
-      <div class="hk-detail"><span>Belt and Road Scholarship</span>Kazakhstan is an eligible participating country under the current official 2026 information. 2027 terms are subject to change. Current 2026 package states full tuition for non-local students.</div>
-      <div class="hk-warning">WATCH FOR 2027 UPDATE — do not assume the 2027 Belt and Road award will automatically cover HK$590,000 MBBS tuition until HKU confirms the 2027 terms.</div>
+      <div class="hk-detail"><span>Belt and Road Scholarship — 2027 application</span>HKU now lists an official <b>31 Jan 2027</b> scholarship deadline. Kazakhstan is among eligible Belt and Road countries. The stated award is <b>full non-local tuition</b> for successful recipients; it does not expressly promise hostel or a living stipend. Applicants must indicate interest in the HKU application and upload documents under <b>HKSAR Government Scholarship Fund Targeted Scholarship – Belt and Road Scholarships</b>: a one-page motivation and post-graduation plans, CV with supporting evidence, and four short paragraphs on academics, community contribution, leadership/communication, and contribution to Hong Kong.</div>
+      <div class="hk-warning">ACTION: Submit Belt and Road scholarship materials by <b>31 Jan 2027</b>. Confirm with HKU whether 2027 MBBS tuition of HK$590,000 is fully eligible under this award; the general scholarship page does not explicitly identify MBBS. Even a full-tuition award is <b>not a full ride</b> without accommodation and living support.</div>
       <div id="hkuScholarshipChecklist" class="hk-checklist"></div>
       <div class="hk-source-links">
         <a class="btn soft" target="_blank" rel="noopener" href="https://www.admissions.hku.hk/node/140">Entrance scholarship source</a>
@@ -4818,7 +4818,7 @@ const hkuInterviewItems=[
 const hkuScholarshipItems=[
   "Confirm 2027 eligibility","Confirm whether MBBS is eligible","Confirm scholarship amount for 2027",
   "Confirm whether tuition HK$590,000 MBBS is fully covered","Prepare CV","Prepare achievement portfolio",
-  "Prepare leadership/community evidence","Prepare scholarship essays/statements","Submit scholarship materials if separate application is required"
+  "Prepare leadership/community evidence","Draft one-page scholarship motivation + post-graduation plans","Prepare four short paragraphs: academics, community, leadership, contribution to Hong Kong","Select Belt and Road interest in HKU portal","Upload CV, certificates and scholarship materials by 31 Jan 2027"
 ];
 
 const cuhkScholarshipItems=[
@@ -4838,7 +4838,7 @@ const hkDocRows=[
   {doc:"CV / Resume",uni:"HKU + CUHK",req:"Recommended / optional",start:"2026-10-08",mine:"2026-10-25",official:"Before submission"},
   {doc:"Awards & certificates",uni:"HKU + CUHK",req:"Supporting",start:"2026-10-08",mine:"2026-10-25",official:"Before submission"},
   {doc:"Academic recommendation",uni:"HKU + CUHK",req:"Yes / strongly relevant",start:"2026-10-03",mine:"2026-10-08",official:"Submit through portal workflow"},
-  {doc:"Belt and Road scholarship materials",uni:"HKU",req:"If applying",start:"2026-10-12",mine:"2026-11-20",official:"2027 deadline pending"},
+  {doc:"Belt and Road scholarship materials",uni:"HKU",req:"Yes for this scholarship",start:"2026-10-12",mine:"2027-01-15",official:"31 Jan 2027; HKU portal scholarship section"},
   {doc:"Final Attestat",uni:"HKU + CUHK",req:"Later",start:"2027-05-01",mine:"2027-07-15",official:"Upload after graduation when available"}
 ];
 
@@ -4862,7 +4862,9 @@ const hkPersonalGroups=[
   {date:"2026-12-01",label:"BY 1 DECEMBER 2026 — CUHK 90% ready",tasks:["CUHK application fields complete","CUHK documents uploaded","250-word Medicine statement final","Referee information entered","CUHK fee payment ready"]},
   {date:"2026-12-10",label:"BY 10 DECEMBER 2026",tasks:["Final CUHK document check","Final spelling/name check","Final programme preference check","Verify MBChB selected","Confirm referee email addresses","Check IELTS status","Check UNT status/pending result field if applicable"]},
   {date:"2026-12-15",label:"15 DECEMBER 2026 — TARGET: SUBMIT CUHK MBChB",tasks:["Submit CUHK MBChB application","Pay HK$500 fee","Save application number","Confirm referees received emails","Track referee submission","Upload later results when available","Start interview prep"]},
-  {date:"2027-01-07",label:"7 JANUARY 2027 — OFFICIAL CUHK MEDICINE DEADLINE",tasks:["CUHK Medicine application complete"]}
+  {date:"2027-01-07",label:"7 JANUARY 2027 — OFFICIAL CUHK MEDICINE DEADLINE",tasks:["CUHK Medicine application complete"]},
+  {date:"2027-01-25",label:"BY 25 JANUARY 2027 — HKU BELT AND ROAD",tasks:["Confirm MBBS eligibility and 2027 award scope with HKU","Complete one-page scholarship motivation and future plans","Complete four short eligibility paragraphs","Upload CV and certificates","Confirm scholarship interest selected in HKU portal"]},
+  {date:"2027-01-31",label:"31 JANUARY 2027 — HKU BELT AND ROAD SCHOLARSHIP DEADLINE",tasks:["Submit HKU Belt and Road scholarship documents via HKU portal","Save submission proof"]}
 ];
 
 const hkSchoolDocItems=[
@@ -5110,7 +5112,8 @@ function renderHkTopSummary(){
     {label:"HKU target",date:"2026-11-15"},
     {label:"HKU first round",date:"2026-11-25"},
     {label:"CUHK target",date:"2026-12-15"},
-    {label:"CUHK Medicine",date:"2027-01-07"}
+    {label:"CUHK Medicine",date:"2027-01-07"},
+    {label:"HKU Belt and Road scholarship",date:"2027-01-31"}
   ].filter(x=>hkDaysLeft(x.date)>=0).sort((a,b)=>a.date.localeCompare(b.date));
 
   document.getElementById("hkNextUniversityDeadline").textContent=
@@ -5293,7 +5296,8 @@ function injectHongKongIntoToday(){
       {university:"HKU MBBS",action:"Personal submission target",deadline:"2026-11-15"},
       {university:"HKU MBBS",action:"Official first-round deadline",deadline:"2026-11-25"},
       {university:"CUHK MBChB",action:"Personal submission target",deadline:"2026-12-15"},
-      {university:"CUHK MBChB",action:"Official Medicine deadline",deadline:"2027-01-07"}
+      {university:"CUHK MBChB",action:"Official Medicine deadline",deadline:"2027-01-07"},
+      {university:"HKU Belt and Road Scholarship",action:"Official scholarship deadline; submit separate materials in HKU portal",deadline:"2027-01-31"}
     );
   }
 }
