@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-22T09:28:00+05:00",
+  "last_data_change": "2026-10-22T09:28:00+05:00",
+  "verified_changes": [
+    {
+      "topic": "HKU Belt and Road Scholarship 2027",
+      "deadline": "2027-01-31",
+      "eligible_country": "Kazakhstan",
+      "coverage": "Full non-local tuition stated; MBBS-specific calculation, accommodation, insurance and stipend not separately confirmed",
+      "documents": [
+        "One-page statement",
+        "CV and evidence",
+        "Four short paragraphs"
+      ],
+      "source": "https://admissions.hku.hk/fees-and-scholarships/scholarships/belt-and-road-scholarship"
+    },
+    {
+      "topic": "CSCA November registration",
+      "status": "Closed after 2026-10-21 23:59 Beijing time",
+      "next_exam": "2026-12-19 to 2026-12-20 (registration not yet open)",
+      "source": "https://csca.cn/"
+    },
+    {
+      "topic": "Nanjing Medical University English MBBS CSC funding",
+      "status": "Official 2026 FAQ excludes English MBBS from CSC Type A and Type B; 2027 unconfirmed",
+      "source": "https://sie.njmu.edu.cn/_t335/cjwt/list.htm"
+    }
+  ]
+}
