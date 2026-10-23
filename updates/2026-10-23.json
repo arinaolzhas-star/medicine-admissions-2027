@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-10-23T10:08:19+05:00",
+  "timezone": "Asia/Almaty",
+  "official_sources_checked": [
+    "https://admissions.hku.hk/apply/international-qualifications",
+    "https://admissions.hku.hk/fees-and-scholarships/scholarships/belt-and-road-scholarship",
+    "https://admissions.hku.hk/fees-and-scholarships/fees",
+    "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/application-guides/",
+    "https://admission.cuhk.edu.hk/fees-financing-your-studies/fees/",
+    "https://csca.cn/",
+    "https://www.campuschina.org/",
+    "https://sie.njmu.edu.cn/_t335/cjwt/list.htm",
+    "https://oic.bjmu.edu.cn/lxby/zsjz/b722ea27933042248caf4884c1f1a50f.htm",
+    "https://www.gov.kz/situations/8/intro",
+    "https://oq.gov.kz/ru/qazalemnews/1397"
+  ],
+  "status": {
+    "november_csca_registration": "closed 2026-10-21 23:59 Beijing time",
+    "december_csca_exam": "2026-12-19 to 2026-12-20; registration not open as checked",
+    "hku_belt_and_road_deadline": "2027-01-31; 2027 package subject to change, MBBS-specific tuition and living costs unconfirmed",
+    "cuhk_medicine_deadline": "2027-01-07",
+    "china_kazakhstan_2027_28_intergovernmental_call": "not confirmed",
+    "full_funding_english_mbbs_newly_confirmed_today": false
+  },
+  "admissions_information_for_tracker": [
+    {
+      "topic": "Peking University Health Science Center 2027 Clinical Medicine",
+      "publication_date": "2026-10-16",
+      "finding": "2027 undergraduate guide published; Clinical Medicine is Chinese-taught, so not an English MBBS target. CSC Type A requires CSCA Math, Physics, Chemistry, with test language Chinese or English; this does not change teaching language.",
+      "source": "https://oic.bjmu.edu.cn/lxby/zsjz/b722ea27933042248caf4884c1f1a50f.htm"
+    },
+    {
+      "topic": "Nanjing Medical University MBBS",
+      "finding": "Official 2026 FAQ says CSC Type A/B not available for MBBS; 2027 still unconfirmed. No application fee in 2026, freshman scholarships ¥5,000–34,000.",
+      "source": "https://sie.njmu.edu.cn/_t335/cjwt/list.htm"
+    },
+    {
+      "topic": "Bolashak bachelor",
+      "finding": "Separate Kazakhstan funding route restricted from 2026 to eligible I–III international olympiad/science project winners on approved list; direct English MBBS eligibility not established for 2027.",
+      "source": "https://www.gov.kz/situations/8/intro"
+    }
+  ],
+  "repository_update": {
+    "log_written": true,
+    "index_html_update_attempted": true,
+    "index_html_update_succeeded": false,
+    "reason": "GitHub index.html update was blocked by safety checks; website Last checked and Last data change remain unchanged",
+    "website_last_checked": "2026-10-18T09:35:00+05:00",
+    "website_last_data_change": "2026-10-17T09:38:00+05:00"
+  }
+}
