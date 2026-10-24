@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-24T10:13:00+05:00",
+  "timezone": "Asia/Almaty",
+  "site_last_checked": "2026-10-24T10:13:00+05:00",
+  "site_last_data_change": "2026-10-24T10:13:00+05:00",
+  "official_sources_checked": [
+    "https://sie.njmu.edu.cn/2026/0115/c17746a296923/page.htm",
+    "https://admissions.hku.hk/node/172",
+    "https://admissions.hku.hk/fees-and-scholarships/fees",
+    "https://admissions.hku.hk/fees-and-scholarships/scholarships/belt-and-road-scholarship",
+    "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/application-guides/",
+    "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/faq/",
+    "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/fees-calculator/",
+    "https://csca.cn/",
+    "https://csca.cn/about/examintro",
+    "https://oic.bjmu.edu.cn/lxby/zyml/d7bc2113cdfb40c7931eb48b62520aaf.htm",
+    "https://oq.gov.kz/ru/qazalemnews/1397",
+    "https://www.gov.kz/memleket/entities/kazaid/activities/30352",
+    "https://stipendiumhungaricum.hu/partners/"
+  ],
+  "material_updates": [
+    {
+      "topic": "Nanjing Medical University English MBBS 2026 baseline",
+      "finding": "Official 2026 guide lists application fee CNY 500, nonrefundable post-pre-admission deposit CNY 13,000, tuition CNY 34,000/year, insurance CNY 600/year, accommodation CNY 6,000–8,000/year; IELTS 6.0 min 5 each or alternatives; CSCA Math and Chemistry mandatory; GPA >=3.0/4 equivalent; full-tuition scholarship CNY 34,000 does not cover living; 2027 unconfirmed.",
+      "source": "https://sie.njmu.edu.cn/2026/0115/c17746a296923/page.htm"
+    },
+    {
+      "topic": "HKU 2027 MBBS affordability and Belt Road",
+      "finding": "Official 2027 application fee HKD 780; 2027/28 nonlocal MBBS tuition HKD 590,000/year; current Belt Road description states full nonlocal tuition for successful awardees, Kazakhstan eligible, but 2027 terms subject to modification and living/hostel/insurance coverage unverified.",
+      "sources": [
+        "https://admissions.hku.hk/node/172",
+        "https://admissions.hku.hk/fees-and-scholarships/fees",
+        "https://admissions.hku.hk/fees-and-scholarships/scholarships/belt-and-road-scholarship"
+      ]
+    },
+    {
+      "topic": "Applicant profile correction",
+      "finding": "Use GPA 4.65/5.0 and only EndoSim as owned project; exclude AngioSim and other unverified STEM projects."
+    }
+  ],
+  "unchanged_or_pending": [
+    "CSCA Nov registration closed, Dec 19–20 session registration not open",
+    "CUHK Medicine regular deadline Jan 7, 2027; application fee HKD 500; annual tuition HKD 230,000",
+    "Peking University Health Science Center Clinical Medicine Chinese-taught; exclude",
+    "Kazakhstan-China bilateral 2027/28 call and English MBBS coverage unconfirmed",
+    "No newly confirmed fully funded English MBBS eligibility for 2027"
+  ],
+  "repository_update": {
+    "index_html_updated": true,
+    "index_html_commit": "99aca8b060d61ef5f2e74108bb0292e076c8f284"
+  }
+}
