@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-10-25T09:45:00+05:00",
+  "timezone": "Asia/Almaty",
+  "site_last_checked": "2026-10-25T09:45:00+05:00",
+  "site_last_data_change": "2026-10-25T09:45:00+05:00",
+  "official_sources_checked": [
+    "https://stipendiumhungaricum.hu/partners/",
+    "https://stipendiumhungaricum.hu/apply/",
+    "https://stipendiumhungaricum.hu/wp-content/uploads/2025/10/BA_MA_OTM_Call_for_Applications_2026_27.pdf",
+    "https://www.gov.kz/situations/765/intro",
+    "https://www.gov.kz/situations/16/39",
+    "https://oq.gov.kz/ru/qazalemnews/1397",
+    "https://hkumed-ugadmissions.hku.hk/ug_programmes/bachelor-of-medicine-and-bachelor-of-surgery/",
+    "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/application-guides/",
+    "https://sie.njmu.edu.cn/2026/0115/c17746a296923/page.htm",
+    "https://csca.cn/",
+    "https://turkiyeburslari.gov.tr/calendar",
+    "https://www.turkiyeburslari.gov.tr/scholarshipsprograms",
+    "https://campuschina.org/"
+  ],
+  "material_updates": [
+    {
+      "topic": "Stipendium Hungaricum eligibility — Kazakhstan",
+      "finding": "Official indexed Sending Partner listing states Kazakhstan is eligible for full-degree one-tier master studies in any field of interest; therefore previous blanket medicine exclusion was unsupported. General Medicine is a one-tier degree, but availability in 2027/28 for Kazakhstan and exact program/nomination remain unconfirmed. Partner site currently intermittently in maintenance.",
+      "source": "https://stipendiumhungaricum.hu/partners/"
+    },
+    {
+      "topic": "Kazakhstan intergovernmental scholarships post-study obligation",
+      "finding": "Official Kazakhstan guidance: awardees sent under Order 613 must return to Kazakhstan after graduation and work continuously for one year; this does not automatically apply to other scholarship schemes. Kazakhstan nomination is not final university admission.",
+      "source": "https://www.gov.kz/situations/765/intro"
+    },
+    {
+      "topic": "Bolashak undergraduate eligibility clarification",
+      "finding": "Government page updated Oct 19 2026: bachelor scholarships restricted to I-III medalists of international school olympiads or international scientific-project contests on an approved list; EndoSim alone does not establish eligibility.",
+      "source": "https://www.gov.kz/situations/16/39"
+    }
+  ],
+  "unchanged_or_pending": [
+    "2027/28 Hungarian call and exact English General Medicine programme eligibility unverified",
+    "2027/28 Kazakhstan-China bilateral scholarship announcement and English MBBS funding unverified",
+    "HKU/CUHK tuition, fees, scholarships and deadlines: no verified changes from prior check",
+    "CSCA December registration details not independently confirmed due to JavaScript-only portal",
+    "No newly confirmed fully funded English MBBS place for 2027"
+  ],
+  "repository_update": {
+    "index_html_updated": true,
+    "index_html_commit": "4e72998ff135520382bf816d261d0651ba22c342"
+  }
+}
