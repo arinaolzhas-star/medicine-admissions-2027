@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-10-26T09:29:00+05:00",
+  "timezone": "Asia/Almaty",
+  "site_last_checked": "2026-10-26T09:29:00+05:00",
+  "site_last_data_change": "2026-10-26T09:29:00+05:00",
+  "official_sources_checked": [
+    "https://iso.hust.edu.cn/Scholarships/Scholarship_Information_and_Tips.htm",
+    "https://iso.hust.edu.cn/Scholarships/Bilateral_Programs_BP_.htm",
+    "https://iso.hust.edu.cn/info/1194/4638.htm",
+    "https://www.mbbs.sdu.edu.cn/Admission.htm",
+    "https://www.shsmu.edu.cn/iso/zsxx/bkszs.htm",
+    "https://sie.njmu.edu.cn/17746/",
+    "https://csca.cn/about/examintro",
+    "https://csca.cn/about/registprocess",
+    "https://stipendiumhungaricum.hu/partners/",
+    "https://www.turkiyeburslari.gov.tr/",
+    "https://international.unime.it/study-us/application-and-admission",
+    "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/faq/",
+    "https://hkumed-ugadmissions.hku.hk/ug_programmes/bachelor-of-medicine-and-bachelor-of-surgery/",
+    "https://bolashak.gov.kz/",
+    "https://campuschina.org/"
+  ],
+  "material_updates": [
+    {
+      "topic": "HUST Chinese Government Scholarship 2027 route eligibility for Kazakhstan English MBBS",
+      "finding": "Official HUST 2027 CSC information specifies Type A Bilateral Program accepts undergraduate candidates, with no application fee and application through home-country dispatching authorities rather than direct HUST/CSC. Type B Chinese University Program is postgraduate-only. Type B Silk Road program excludes Kazakhstan (10 listed countries) and offers only Chinese-taught Architecture and Software Engineering at bachelor level. The Type B ¥800 fee is distinct from Type A no-fee route. English MBBS eligibility and full coverage through Kazakhstan Type A remain unconfirmed.",
+      "sources": [
+        "https://iso.hust.edu.cn/Scholarships/Scholarship_Information_and_Tips.htm",
+        "https://iso.hust.edu.cn/Scholarships/Bilateral_Programs_BP_.htm"
+      ]
+    }
+  ],
+  "unchanged_or_pending": [
+    "No verified 2027 Kazakhstan-China bilateral award explicitly funding English MBBS",
+    "No newly confirmed 2027 English MBBS fully funded award including accommodation, insurance, and stipend",
+    "HKU and CUHK 2027 admission and fee requirements unchanged from previous check",
+    "Stipendium Hungaricum 2027/28 exact Medicine program availability for Kazakhstan unconfirmed",
+    "University of Messina 2027 Medicine window July 1-22 previously known; 2027 application fee not established",
+    "CSCA December 2026 registration details not independently confirmed on JS-only portal",
+    "MЭСК/UNT-equivalent and SAT requirements for 2027 direct MBBS not newly published in tracked sources"
+  ],
+  "repository_update": {
+    "index_html_updated": true,
+    "index_html_commit": "fbf4d1f2a5f3af3fe8e1a5cad7f84c034fcf7417",
+    "hust_tracker_updated": true
+  }
+}
