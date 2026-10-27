@@ -1,0 +1,77 @@
+{
+  "checked_at": "2026-10-27T09:52:45+05:00",
+  "timezone": "Asia/Almaty",
+  "site_last_checked": "2026-10-27T09:52:00+05:00",
+  "site_last_data_change": "2026-10-27T09:52:00+05:00",
+  "official_sources_checked": [
+    "https://iso.hust.edu.cn/info/1194/5144.htm",
+    "https://iso.hust.edu.cn/Scholarships/Scholarship_Information_and_Tips.htm",
+    "https://iso.hust.edu.cn/Scholarships/Bilateral_Programs_BP_.htm",
+    "https://sie.njmu.edu.cn/17746/",
+    "https://sie.njmu.edu.cn/2026/0115/c17746a296923/page.htm",
+    "https://sie.njmu.edu.cn/cjwt/list.htm",
+    "https://www.shsmu.edu.cn/iso/zsxx/bkszs.htm",
+    "https://www.mbbs.sdu.edu.cn/Admission.htm",
+    "https://csca.cn/about/examintro",
+    "https://bolashak.gov.kz/ru/usloviya-i-dokumenty",
+    "https://bolashak.gov.kz/ru",
+    "https://campuschina.org/",
+    "https://stipendiumhungaricum.hu/partners/",
+    "https://www.turkiyeburslari.gov.tr/fulltimeprograms",
+    "https://international.unime.it/study-us/application-and-admission",
+    "https://hkumed-ugadmissions.hku.hk/ug_programmes/bachelor-of-medicine-and-bachelor-of-surgery/",
+    "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/faq/"
+  ],
+  "material_updates": [
+    {
+      "topic": "HUST published official international undergraduate admissions guide for 2027 on 2026-10-26",
+      "details": {
+        "program": "Clinical Medicine (MBBS), English, 6 years",
+        "applications_open": "2026-10-26",
+        "first_round_deadline": "2027-04-15",
+        "second_round_deadline": "2027-06-30",
+        "application_fee_direct": "CNY 800 non-refundable; English text says due by 2027-02-25; Chinese text says within 15 days of submission. University clarification required.",
+        "tuition": "CNY 40,000/year",
+        "dorm": "CNY 700-900/month double; CNY 1,200/month single",
+        "insurance": "CNY 1,000/year",
+        "ielts": "IELTS >=5.5; TOEFL >=80; Duolingo >=110; English-medium previous schooling may be exempt",
+        "csca": "Mathematics + Chemistry for English MBBS; score report listed in academic documents",
+        "sat_unt": "SAT and Kazakhstan UNT/MЭСК not listed as mandatory in this guide",
+        "documents": "Expected graduation certificate accepted for current seniors; transcripts; personal statement; self-introduction video <=60 sec; English evidence; CSCA; passport valid beyond 2028-10-15; medical examination; noncriminal certificate; bank statement/financial guarantee >=USD 5000 for regular admissions; China guardian authorization and guarantee letter if under 18 on 2027-09-01",
+        "scholarship": "CSC Type A is a separate no-application-fee route through Kazakhstan dispatching authority; whether HUST English MBBS is covered and whether full expenses are funded remains unconfirmed"
+      },
+      "source": "https://iso.hust.edu.cn/info/1194/5144.htm"
+    },
+    {
+      "topic": "Nanjing Medical University 2026 FAQ establishes CSC exclusion and conflicts with guide on fees",
+      "details": "Official 2026 FAQ explicitly says MBBS is not covered by CSC Type A or Type B, says no application fee; official 2026 MBBS guide lists CNY 500 registration fee. The CNY 13,000 non-refundable deposit is required even if tuition scholarship is awarded. Do not assume 2027 identical; seek clarification.",
+      "sources": [
+        "https://sie.njmu.edu.cn/cjwt/list.htm",
+        "https://sie.njmu.edu.cn/2026/0115/c17746a296923/page.htm"
+      ]
+    },
+    {
+      "topic": "Kazakhstan Center for International Programs intergovernmental scholarship general eligibility and documents",
+      "details": "Current official instructions state bachelor's GPA threshold >=4.00/5.00, English-language study IELTS >=5.5 or TOEFL >=46 or proof of prior English-medium education, and notarized legal guardian consent for applicants under 18. This is general intergovernmental eligibility, not confirmation of a 2027/28 China English MBBS award.",
+      "source": "https://bolashak.gov.kz/ru/usloviya-i-dokumenty"
+    }
+  ],
+  "unchanged_or_pending": [
+    "No official Kazakhstan-China 2027/28 bilateral competition specifically funding English MBBS located",
+    "HUST CSC Type A English MBBS eligibility and all-expenses funding remain unconfirmed",
+    "No new 2027 English MBBS Nanjing guide; 2026 FAQ and guide differ on fees",
+    "CSCA official portal is JavaScript-only in current text retrieval; December registration not independently confirmed",
+    "HKU/CUHK no newly confirmed full tuition+dorm+living funding for this applicant",
+    "Stipendium Hungaricum Kazakhstan one-tier Medicine possible in country field but specific 2027/28 Medicine availability not independently established",
+    "2027 SAT/UNT requirements not newly imposed in reviewed official MBBS sources",
+    "CUHK and Shandong sources intermittently timed out; avoid claiming comprehensive verification"
+  ],
+  "repository_update": {
+    "index_html_updated": true,
+    "index_html_commit": "b105e6d3aa5ce04fa44ee98217935d4089f76f46",
+    "hust_tracker_updated": true,
+    "nmu_tracker_added": true,
+    "last_checked_updated": true,
+    "last_data_change_updated": true
+  }
+}
