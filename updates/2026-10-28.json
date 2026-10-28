@@ -1,0 +1,96 @@
+{
+  "checked_at": "2026-10-28T09:42:17+05:00",
+  "timezone": "Asia/Almaty",
+  "site_last_checked": "2026-10-28T09:42:00+05:00",
+  "site_last_data_change": "2026-10-28T09:42:00+05:00",
+  "official_sources_checked": [
+    "https://admissions.hku.hk/fees-and-scholarships/scholarships/belt-and-road-scholarship",
+    "https://admissions.hku.hk/apply/international-qualifications",
+    "https://admissions.hku.hk/apply/international-qualifications/information-for-counsellors",
+    "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/application-guides/",
+    "https://admission.cuhk.edu.hk/application/non-jupas/faq/",
+    "https://admission.cuhk.edu.hk/fees-financing-your-studies/scholarships/admission-scholarships-for-undergraduates-only/",
+    "https://admission.cuhk.edu.hk/fees-financing-your-studies/scholarships/list-of-scholarships/",
+    "https://admission.cuhk.edu.hk/fees-financing-your-studies/fees/",
+    "https://www.studyinhongkong.edu.hk/en/hong-kong-education/scholarships.php",
+    "https://iso.hust.edu.cn/info/1194/5144.htm",
+    "https://iso.hust.edu.cn/Scholarships/Scholarship_Information_and_Tips.htm",
+    "https://sie.njmu.edu.cn/cjwt/list.htm",
+    "https://csca.cn/about/examintro",
+    "https://bolashak.gov.kz/ru/usloviya-i-dokumenty",
+    "https://www.campuschina.org/",
+    "https://stipendiumhungaricum.hu/apply/",
+    "https://stipendiumhungaricum.hu/partners/",
+    "https://www.turkiyeburslari.gov.tr/fulltimeprograms",
+    "https://turkiyeburslari.gov.tr/calendar"
+  ],
+  "material_updates": [
+    {
+      "topic": "HKU 2027 Belt and Road Scholarship deadline and required documents confirmed on official HKU scholarship page",
+      "details": {
+        "deadline": "2027-01-31",
+        "kazakhstan_eligible": true,
+        "award": "full non-local tuition for successful awardees",
+        "application": "Indicate interest in HKU application and upload to HKSAR Government Scholarship Fund Targeted Scholarship – Belt and Road Scholarships section",
+        "documents": [
+          "one-page statement why eligible and plans after graduation",
+          "current CV and evidence/certificates",
+          "four short paragraphs: academic achievements; institution/society contributions; leadership/communication; interest in Hong Kong"
+        ],
+        "not_confirmed": [
+          "MBBS-specific award eligibility",
+          "housing",
+          "living stipend",
+          "insurance",
+          "guaranteed scholarship"
+        ]
+      },
+      "source": "https://admissions.hku.hk/fees-and-scholarships/scholarships/belt-and-road-scholarship"
+    },
+    {
+      "topic": "CUHK Belt and Road Scholarship specifically includes Kazakhstan and is nominated automatically",
+      "details": {
+        "kazakhstan_eligible": true,
+        "application": "CUHK nominates suitable first-year undergraduate candidates; no separate scholarship application",
+        "award": "tuition fee coverage for selected recipients",
+        "not_confirmed": [
+          "MBChB-specific award eligibility",
+          "living expenses",
+          "accommodation",
+          "insurance",
+          "award stacking"
+        ]
+      },
+      "sources": [
+        "https://admission.cuhk.edu.hk/fees-financing-your-studies/scholarships/admission-scholarships-for-undergraduates-only/",
+        "https://www.studyinhongkong.edu.hk/en/hong-kong-education/scholarships.php"
+      ]
+    }
+  ],
+  "unchanged_or_pending": [
+    "HKU first-round admissions deadline 25 Nov 2026; CUHK Medicine regular deadline 7 Jan 2027, no advance offer for Medicine",
+    "HUST 2027 English MBBS guide published 26 Oct 2026; existing site figures and CSCA Mathematics+Chemistry unchanged",
+    "Nanjing Medical University 2026 FAQ: English MBBS not CSC Type A/B eligible; 2027 policy unconfirmed",
+    "No official Kazakhstan–China 2027/28 competition confirming fully funded English MBBS found",
+    "No new confirmation of 2027 SAT or Kazakhstan UNT/МЭСК mandatory requirements for Chinese English MBBS",
+    "CSCA portal JavaScript-only; December 2026 registration status not independently verified",
+    "Stipendium Hungaricum 2027/28 call and Medicine availability not confirmed in official 2026/27 call page",
+    "Türkiye Scholarships 2027-specific call not yet confirmed; 2026/annual general calendar still posted",
+    "No verified 2027 direct English Medicine full-ride covering tuition+dorm+insurance+stipend"
+  ],
+  "verification_limits": [
+    "Some CUHK pages intermittently timed out in direct open; search indexed official content and government scholarship page were available",
+    "CampusChina homepage timed out",
+    "CSCA page requires JavaScript"
+  ],
+  "repository_update": {
+    "index_html_updated": true,
+    "index_html_commit": "e3da93f77cc61b19e1a40d66023b1f79566325df",
+    "last_checked_updated": true,
+    "last_data_change_updated": true,
+    "hku_scholarship_tracker_updated": true,
+    "cuhk_scholarship_tracker_updated": true,
+    "document_deadline_updated": true,
+    "personal_timeline_updated": true
+  }
+}
