@@ -1,0 +1,71 @@
+{
+  "checked_at": "2026-10-29T09:48:33+05:00",
+  "timezone": "Asia/Almaty",
+  "site_last_checked": "2026-10-29T09:48:00+05:00",
+  "site_last_data_change": "2026-10-29T09:48:00+05:00",
+  "official_sources_checked": [
+    "https://www.admissions.hku.hk/apply/international-qualifications/interview",
+    "https://admissions.hku.hk/apply/international-qualifications",
+    "https://admissions.hku.hk/fees-and-scholarships/scholarships/belt-and-road-scholarship",
+    "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/faq/",
+    "https://admission.cuhk.edu.hk/application/non-jupas/application-guide/",
+    "https://iso.hust.edu.cn/info/1194/5144.htm",
+    "https://iso.hust.edu.cn/Scholarships/Scholarship_Information_and_Tips.htm",
+    "https://english.njmu.edu.cn/6079/list.htm",
+    "https://csca.cn/articles/about/sfz_rule",
+    "https://csca.cn/about/registprocess",
+    "https://bolashak.gov.kz/ru/usloviya-i-dokumenty",
+    "https://www.campuschina.org/",
+    "https://stipendiumhungaricum.hu/apply/",
+    "https://www.turkiyeburslari.gov.tr/fulltimeprograms"
+  ],
+  "material_updates": [
+    {
+      "topic": "Newly verified 2027 HKU MBBS interview windows added to HKU interview tracker and timeline",
+      "dates": [
+        "2026-12-15",
+        "2026-12-16",
+        "2027-03-31",
+        "2027-07-12",
+        "2027-08-20"
+      ],
+      "note": "Published potential interview dates for shortlisted international-qualification applicants, not guaranteed appointments.",
+      "source": "https://www.admissions.hku.hk/apply/international-qualifications/interview"
+    },
+    {
+      "topic": "CSCA passport-only identification requirement added to latest official-source notice",
+      "details": "Valid original ordinary passport required; national ID/e-copy not accepted. Changes after admission ticket generation not accepted.",
+      "source": "https://csca.cn/articles/about/sfz_rule"
+    },
+    {
+      "topic": "CUHK 2027 application fee waiver prohibition added to CUHK tracker",
+      "details": "HK$500 non-refundable; waiver and deferred payment requests not accepted.",
+      "source": "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/faq/"
+    }
+  ],
+  "unchanged_or_pending": [
+    "HKU first-round 25 Nov 2026 and Belt and Road scholarship deadline 31 Jan 2027 remain unchanged",
+    "CUHK Medicine deadline 7 Jan 2027, tuition HK$230,000/year, and scholarship status unchanged",
+    "HUST 2027 English MBBS IELTS >=5.5, CSCA Mathematics + Chemistry, tuition CNY40,000/year, direct application fee CNY800 and deadlines unchanged",
+    "HUST CSC Type A free application route does not confirm English MBBS full scholarship eligibility",
+    "Nanjing Medical University English MBBS CSC ineligibility stated in 2026 FAQ; 2027 confirmation pending",
+    "No official Kazakhstan-China 2027/28 full-funded English MBBS competition confirmed",
+    "No verified new SAT or UNT/MЭСК requirement for Chinese English MBBS; HKU/CUHK Kazakhstan-route qualification requirements remain separate",
+    "No verified new 2027/28 Stipendium Hungaricum or Türkiye scholarship Medicine-specific call",
+    "No new verified English Medicine full-ride including tuition, accommodation, insurance and stipend"
+  ],
+  "verification_limits": [
+    "CampusChina direct page returned 502",
+    "CSCA portal content requires JavaScript; identification rule confirmed via official indexed page",
+    "CUHK FAQ direct open intermittently timed out; official indexed FAQ accessible"
+  ],
+  "repository_update": {
+    "index_html_updated": true,
+    "index_html_commit": "4ce6d82bc02d991ddf0c10874e7b1cce59458456",
+    "last_checked_updated": true,
+    "last_data_change_updated": true,
+    "hku_interview_tracker_updated": true,
+    "cuhk_fee_tracker_updated": true,
+    "personal_timeline_updated": true
+  }
+}
