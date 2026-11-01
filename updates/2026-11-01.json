@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-11-01T05:16:41.686Z",
+  "timezone": "Asia/Almaty",
+  "site_last_checked": "01 Nov 2026, 10:16",
+  "site_last_data_change": "01 Nov 2026, 10:16",
+  "official_sources_checked": [
+    "https://gjjyxy.xjmu.edu.cn/info/1049/1356.htm",
+    "https://gjjyxy.xjmu.edu.cn/gjszs/bkszsjz.htm",
+    "https://iso.hust.edu.cn/info/1194/5144.htm",
+    "https://iso.hust.edu.cn/Scholarships/Scholarship_Information_and_Tips.htm",
+    "https://admissions.hku.hk/apply/international-qualifications",
+    "https://www.admissions.hku.hk/apply/international-qualifications/interview",
+    "https://admissions.hku.hk/fees-and-scholarships/scholarships/belt-and-road-scholarship",
+    "https://admissions.hku.hk/fees-and-scholarships/fees",
+    "https://admission.cuhk.edu.hk/application/overseas-other-qualifications-non-local-international-team/faq/",
+    "https://sie.njmu.edu.cn/cjwt/list.htm",
+    "https://www.shsmu.edu.cn/iso/info/1108/1486.htm",
+    "https://www.shsmu.edu.cn/iso/ENGLISH/Admission/Scholarship.htm",
+    "https://www.mbbs.sdu.edu.cn/Admission.htm",
+    "https://csca.cn/about/examintro",
+    "https://csca.cn/about/registprocess",
+    "https://bolashak.gov.kz/ru/usloviya-i-dokumenty",
+    "https://stipendiumhungaricum.hu/apply/",
+    "https://www.turkiyeburslari.gov.tr/scholarshipsprograms",
+    "https://www.turkiyeburslari.gov.tr/fulltimeprograms",
+    "https://www.campuschina.org/"
+  ],
+  "material_updates": [
+    {
+      "topic": "XJMU undergraduate minimum age is 18–25 in the official 2026 guide; eligibility risk for an applicant still under 18 on 1 September 2027",
+      "source": "https://gjjyxy.xjmu.edu.cn/info/1049/1356.htm",
+      "scope": "2026 only; 2027 age criteria not yet published",
+      "tracker_changes": "Downgraded XJMU from core to watch; added age-risk alert and written-confirmation action; corrected displayed university count from 4 to 5",
+      "contact": "iec@xjmu.edu.cn"
+    }
+  ],
+  "unchanged_or_pending": [
+    "No confirmed new full-ride English MBBS 2027 covering tuition, accommodation, insurance and stipend",
+    "HUST English MBBS 2027: CSCA Mathematics + Chemistry; tuition CNY 40,000/year; direct application CNY 800; CSC Type A English MBBS eligibility unconfirmed",
+    "HKU MBBS first round 25 Nov 2026; Belt and Road Scholarship deadline 31 Jan 2027; tuition-only award as currently described",
+    "CUHK Medicine regular deadline 7 Jan 2027; application fee HKD 500; scholarship full living coverage unconfirmed",
+    "No confirmed Kazakhstan-China 2027/28 English MBBS bilateral award",
+    "No confirmed 2027/28 Stipendium Hungaricum or Türkiye Medicine-specific call",
+    "No new mandatory SAT or Kazakhstan UNT/MЭСК requirement confirmed for tracked English MBBS programs"
+  ],
+  "verification_limits": [
+    "CSCA portal requires JavaScript",
+    "CUHK official FAQ direct open returned 502; indexed official page accessible",
+    "Shandong MBBS page timed out",
+    "Campus China direct 2027 programme eligibility could not be verified"
+  ],
+  "repository_update": {
+    "index_html_updated": true,
+    "index_html_commit": "325e08ec420105ad52892e8f8df7b35f184901ce",
+    "last_checked_updated": true,
+    "last_data_change_updated": true,
+    "xjmu_age_risk_tracker_updated": true
+  }
+}
